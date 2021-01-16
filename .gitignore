@@ -1,2 +1,14 @@
-/venv
+
+### Rasa ###
 /models
+events.db
+events.db-shm
+events.db-wal
+rasa.db
+
+## Python ##
+actions/__pycache__
+
+
+## Virtual Environment ##
+/venv
