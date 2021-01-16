@@ -103,28 +103,28 @@ nlu:
     - me fale mais sobre você
 
 # FAQ GERAL
-- intent: perguntar_sobre_covid
+- intent: faq/sobre_covid
   examples: |
     - o que é covid?
     - o que significa covid?
     - fale sobre covid-19
     - me fale mais sobre o covid-19
 
-- intent: perguntar_sobre_coronavirus
+- intent: faq/sobre_coronavirus
   examples: |
     - o que é coronavirus?
     - o que significa coronavírus?
     - fale sobre coronavirus
     - me fale mais sobre o coronavirus
 
-- intent: perguntar_sobre_sars
+- intent: faq/sobre_sars
   examples: |
     - o que é sars?
     - o que significa sars-cov-2?
     - fale sobre sars-cov-2
     - me fale mais sobre o sars-cov-2
 
-- intent: perguntar_diferenca_covid_coronavirus
+- intent: faq/diferenca_covid_coronavirus
   examples: |
     - tem diferença entre covid e coronavirus?
     - covid e coronavírus são a mesma coisa?
@@ -132,7 +132,7 @@ nlu:
     - qual a diferença de sars-cov-2 e covid?
     - quando devo usar o termo sars? 
 
-- intent: perguntar_como_surgiu_novo_coronavirus
+- intent: faq/como_surgiu_novo_coronavirus
   examples: |
     - de onde veio o novo coronavirus?
     - onde surgiu o coronavirus?
@@ -140,7 +140,7 @@ nlu:
     - coronavirus veio da China?
     - os chineses trouxeram covid para o brasil?
   
-- intent: perguntar_novo_coronavirus_igual_sars
+- intent: faq/novo_coronavirus_igual_sars
   examples: |
     - o novo coronavirus é o mesmo que os vírus sars ou mers?
     - coronavírus é a mesma coisa que sars?
@@ -148,7 +148,7 @@ nlu:
     - novo coronavirus e sars são vírus da mesma família?
     - corona e mers são equivalentes?
 
-- intent: perguntar_diferenca_trasmissao
+- intent: faq/diferenca_trasmissao
   examples: |
     - qual a diferença entre transmissão local e comunitária?
     - tem diferença entre transmissão local e transmissão sustentada?
@@ -156,7 +156,7 @@ nlu:
     - o que é transmissão sustentada?
     - como pode ser transmitido o vírus?
 
-- intent: perguntar_primeiros_sintomas
+- intent: faq/primeiros_sintomas
   examples: |
     - quais os primeiros sintomas da covid-19?
     - quais os sintomas do coronavirus?

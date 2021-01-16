@@ -17,6 +17,16 @@ rules:
   - intent: ajuda
   - action: utter_ajuda
 
+- rule: respond to FAQs
+  steps:
+  - intent: faq
+  - action: utter_faq
+
+# - rule: respond to chitchat
+#   steps:
+#   - intent: chitchat
+#   - action: utter_chitchat
+
 # - rule: Quando o bot não entender
 #   steps:
 #   - intent: nlu_fallback

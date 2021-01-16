@@ -1,98 +1,104 @@
-version: "2.0"
-
+version: '2.0'
+# config:
+#   store_entities_as_slots: true
+# session_config:
+#   session_expiration_time: 60
+#   carry_over_slots_to_new_session: true
+# intents:
+# - cumprimentar:
+#     use_entities: true
+# - despedir:
+#     use_entities: true
+# - affirm:
+#     use_entities: true
+# - deny:
+#     use_entities: true
+# - mood_agradecer:
+#     use_entities: true
+# - mood_unhappy:
+#     use_entities: true
+# - ajuda:
+#     use_entities: true
+# - sobre_bot:
+#     use_entities: true
+# - perguntar_sobre_covid:
+#     use_entities: true
+# - perguntar_sobre_coronavirus:
+#     use_entities: true
+# - perguntar_sobre_sars:
+#     use_entities: true
+# - perguntar_diferenca_covid_coronavirus:
+#     use_entities: true
+# - perguntar_como_surgiu_novo_coronavirus:
+#     use_entities: true
+# - perguntar_novo_coronavirus_igual_sars:
+#     use_entities: true
+# - perguntar_diferenca_trasmissao:
+#     use_entities: true
+# - perguntar_primeiros_sintomas:
+#     use_entities: true
+# entities: []
+# slots: {}
 intents:
-  - cumprimentar
-  - despedir
-  - affirm
-  - deny
-  - mood_agradecer
-  - mood_unhappy
-  - ajuda
-  - sobre_bot
-  - perguntar_sobre_covid
-  - perguntar_sobre_coronavirus
-  - perguntar_sobre_sars
-  - perguntar_diferenca_covid_coronavirus
-  - perguntar_como_surgiu_novo_coronavirus
-  - perguntar_novo_coronavirus_igual_sars
-  - perguntar_diferenca_trasmissao
-  - perguntar_primeiros_sintomas
-#  - nlu_fallback
+- cumprimentar
+- despedir
+- affirm
+- deny
+- mood_agradecer
+- mood_unhappy
+- ajuda
+- sobre_bot
+- faq/sobre_covid
+- faq/sobre_coronavirus
+- faq/sobre_sars
+- faq/diferenca_covid_coronavirus
+- faq/como_surgiu_novo_coronavirus
+- faq/novo_coronavirus_igual_sars
+- faq/diferenca_trasmissao
+- faq/primeiros_sintomas
 
 responses:
   utter_cumprimentar:
-  - text: "Olá, te ajudo com dúvidas sobre o COVID. Como posso te ajudar?"
-
+  - text: Olá, te ajudo com dúvidas sobre o COVID. Como posso te ajudar?
   utter_despedir:
-  - text: "Tchau, espero que tenha ajudado! Até mais!"
-
+  - text: Tchau, espero que tenha ajudado! Até mais!
   utter_ajuda:
-  - text: "Veja algumas coisas que pode perguntar: MENU"
-
+  - text: 'Veja algumas coisas que pode perguntar: MENU'
   utter_ajudei:
-  - text: "Ajudei?"
-
+  - text: Ajudei?
   utter_sobre_bot:
-  - text: "Eu sou um bot criado pela maravilhosa Naiara!"
-
+  - text: Eu sou um bot criado pela maravilhosa Naiara!
   utter_responde_agradecimento:
-  - text: "Por nada! Qualquer dúvida estou por aqui!"
-
-#  utter_nao_entendi:
-#  - text: "Desculpe, não entendi."
-
+  - text: Por nada! Qualquer dúvida estou por aqui!
   utter_fallback:
-  - text: "Desculpa, não entendi"
-
-  utter_responde_o_que_e_covid:
-  - text: "É o nome dado à doença causada pelo coronavírus. \
-  Esse nome vem de \"COrona\", \"VIrus\" e \"Disease\" (doença), e 2019 representa o ano em que ela surgiu \
-  (o surto foi relatado à Organização Mundial da Saúde em 31 de dezembro)."
-
-  utter_responde_o_que_e_coronavirus:
-  - text: "A palavra coronavírus refere-se ao grupo ao qual o vírus pertence. \
-  Os coronavírus são a segunda principal causa de resfriado comum"
-
-  utter_responde_o_que_e_sars:
-  - text: "É o nome do vírus, uma sigla para Severe Acute Respiratory Syndrome \
-  CoronaVirus 2 (síndrome respiratório aguda grave por coronavírus 2, em inglês)."
-
-  utter_responde_diferenca_covid_coronavirus:
-  - text: "SARS-CoV-2, coronavírus, novo coronavírus: Use quando se referir ao vírus. \
-  Exemplo: \"Mais de 290 estão infectadas pelo coronavírus no Brasil\"\n 
-  COVID-19: Use quando se referir à doença. A referência é no feminino - a (doença) COVID-19. \
-  Exemplo: A (doença) COVID-19 já matou mais de 2.500 pessoas na Itália."
-
-  utter_responde_como_surgiu_novo_coronavirus:
-  - text: "O novo coronavírus foi identificado pela primeira vez em Wuhan, na província de Hubei,\
-   China, em pessoas expostas em um mercado de frutos do mar e de animais vivos."
-
-  utter_responde_novo_coronavirus_igual_sars:
-  - text: "Não. Os coronavírus pertencem a uma grande família de vírus, que podem circular \
-  tanto entre pessoas, como entre animais, incluindo camelos, gatos e morcegos. O recém-identificado \
-  coronavírus não é o mesmo que o coronavírus que provoca a Síndrome Respiratória do Oriente Médio (Mers)\
-   ou a Síndrome Respiratória Aguda Grave (Sars)."
-
-  utter_responde_diferenca_trasmissao:
-  - text: "Transmissão local: São casos de pessoas que se infectaram e não estiveram em nenhum país \
-  com registro da doença, mas tiveram contato com outro paciente infectado, que trouxe o vírus de fora do país.\n
-  Transmissão comunitária ou sustentada: São casos nos quais não é possível identificar as fontes de transmissão \
-  da doença. Esse tipo de transmissão sugere circulação ativa do vírus na comunidade."
-
-  utter_responde_primeiros_sintomas:
-  - text: "Os sintomas da COVID-19 são bastante parecidos com os da gripe: febre, tosse e dificuldade para respirar."
-
+  - text: Desculpa, não entendi
+  utter_faq/sobre_covid:
+  - text: É o nome dado à doença causada pelo coronavírus. Esse nome vem de "COrona", "VIrus" e "Disease" (doença), e 2019 representa o ano em que ela surgiu (o surto foi relatado à Organização Mundial da Saúde em 31 de dezembro).
+  utter_faq/sobre_coronavirus:
+  - text: A palavra coronavírus refere-se ao grupo ao qual o vírus pertence. Os coronavírus são a segunda principal causa de resfriado comum
+  utter_faq/sobre_sars:
+  - text: É o nome do vírus, uma sigla para Severe Acute Respiratory Syndrome CoronaVirus 2 (síndrome respiratório aguda grave por coronavírus 2, em inglês).
+  utter_faq/diferenca_covid_coronavirus:
+  - text: |-
+      SARS-CoV-2, coronavírus, novo coronavírus: Use quando se referir ao vírus. Exemplo: "Mais de 290 estão infectadas pelo coronavírus no Brasil"
+       COVID-19: Use quando se referir à doença. A referência é no feminino - a (doença) COVID-19. Exemplo: A (doença) COVID-19 já matou mais de 2.500 pessoas na Itália.
+  utter_faq/como_surgiu_novo_coronavirus:
+  - text: O novo coronavírus foi identificado pela primeira vez em Wuhan, na província de Hubei,China, em pessoas expostas em um mercado de frutos do mar e de animais vivos.
+  utter_faq/novo_coronavirus_igual_sars:
+  - text: Não. Os coronavírus pertencem a uma grande família de vírus, que podem circular tanto entre pessoas, como entre animais, incluindo camelos, gatos e morcegos. O recém-identificado coronavírus não é o mesmo que o coronavírus que provoca a Síndrome Respiratória do Oriente Médio (Mers)ou a Síndrome Respiratória Aguda Grave (Sars).
+  utter_faq/diferenca_trasmissao:
+  - text: |-
+      Transmissão local: São casos de pessoas que se infectaram e não estiveram em nenhum país com registro da doença, mas tiveram contato com outro paciente infectado, que trouxe o vírus de fora do país.
+       Transmissão comunitária ou sustentada: São casos nos quais não é possível identificar as fontes de transmissão da doença. Esse tipo de transmissão sugere circulação ativa do vírus na comunidade.
+  utter_faq/primeiros_sintomas:
+  - text: 'Os sintomas da COVID-19 são bastante parecidos com os da gripe: febre, tosse e dificuldade para respirar.'
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
   utter_did_that_help:
-  - text: "Did that help you?"
-
+  - text: Did that help you?
   utter_happy:
-  - text: "Great, carry on!"
-
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  - text: Great, carry on!
+actions: []
+forms: {}
+e2e_actions: []
