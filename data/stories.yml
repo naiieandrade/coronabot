@@ -1,0 +1,51 @@
+version: "2.0"
+
+stories:
+
+- story: o que eh covid
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: perguntar_sobre_covid
+  - action: utter_responde_o_que_e_covid
+  #- action: utter_ajudei
+  - intent: perguntar_diferenca_covid_coronavirus
+  - action: utter_responde_diferenca_covid_coronavirus
+  - intent: mood_agradecer
+  - action: utter_responde_agradecimento
+
+- story: o que eh coronavirus
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: perguntar_sobre_coronavirus
+  - action: utter_responde_o_que_e_coronavirus
+  - intent: perguntar_como_surgiu_novo_coronavirus
+  - action: utter_responde_como_surgiu_novo_coronavirus
+  - intent: mood_agradecer
+  - action: utter_responde_agradecimento
+
+- story: o que eh sars-cov-2
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: perguntar_sobre_sars
+  - action: utter_responde_o_que_e_sars
+  - intent: perguntar_novo_coronavirus_igual_sars
+  - action: utter_responde_novo_coronavirus_igual_sars
+  - intent: mood_agradecer
+  - action: utter_responde_agradecimento
+
+- story: qual diferenca entre covid e coronavirus
+  steps:
+  - intent: perguntar_como_surgiu_novo_coronavirus
+  - action: utter_responde_como_surgiu_novo_coronavirus
+  - intent: perguntar_diferenca_trasmissao
+  - action: utter_responde_diferenca_trasmissao
+  
+  
+- story: qual diferenca entre covid e coronavirus
+  steps:  
+  - intent: perguntar_primeiros_sintomas
+  - action: utter_responde_primeiros_sintomas
+

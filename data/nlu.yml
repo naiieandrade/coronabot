@@ -1,0 +1,165 @@
+version: "2.0"
+
+nlu:
+- synonym: covid
+  examples: |
+    - covid-19
+  
+- synonym: coronavírus
+  examples: |
+    - coronavirus
+    - novo coronavírus
+    - corona
+
+- synonym: sars
+  examples: |
+    - sars-cov-2
+    - sars-covid
+
+- intent: cumprimentar
+  examples: |
+    - oi
+    - olá
+    - bom dia
+    - boa tarde
+    - boa noite
+    - hey
+
+- intent: despedir
+  examples: |
+    - tchau
+    - tenha um bom dia
+    - xau
+    - chau
+    - tchau tchau
+    - boa noite
+    - até mais ver
+    - até mais
+
+- intent: affirm
+  examples: |
+    - sim
+    - s
+    - claro
+    - mas é claro
+    - ok
+    - correto
+
+- intent: deny
+  examples: |
+    - não
+    - n
+    - nunca
+    - eu acho que não
+    - de forma alguma
+    - jamais
+
+- intent: mood_agradecer
+  examples: |
+    - perfeito
+    - boa
+    - bom
+    - maravilha
+    - obrigada
+    - obrigado
+    - entendo
+    - entendi
+    - super claro
+    - valeu!
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: ajuda
+  examples: |
+    - pode me ajudar?
+    - queria ajuda
+    - me ajudaria?
+    - preciso de apoio
+    - poderia me auxiliar?
+    - socorro
+
+- intent: sobre_bot
+  examples: |
+    - quem é você?
+    - você é um bot?
+    - você é humano?
+    - estou falando com quem?
+    - quem te criou?
+    - me fale mais sobre você
+
+# FAQ GERAL
+- intent: perguntar_sobre_covid
+  examples: |
+    - o que é covid?
+    - o que significa covid?
+    - fale sobre covid-19
+    - me fale mais sobre o covid-19
+
+- intent: perguntar_sobre_coronavirus
+  examples: |
+    - o que é coronavirus?
+    - o que significa coronavírus?
+    - fale sobre coronavirus
+    - me fale mais sobre o coronavirus
+
+- intent: perguntar_sobre_sars
+  examples: |
+    - o que é sars?
+    - o que significa sars-cov-2?
+    - fale sobre sars-cov-2
+    - me fale mais sobre o sars-cov-2
+
+- intent: perguntar_diferenca_covid_coronavirus
+  examples: |
+    - tem diferença entre covid e coronavirus?
+    - covid e coronavírus são a mesma coisa?
+    - quando devo usar sars-cov-2, covid-19 e coronavírus?
+    - qual a diferença de sars-cov-2 e covid?
+    - quando devo usar o termo sars? 
+
+- intent: perguntar_como_surgiu_novo_coronavirus
+  examples: |
+    - de onde veio o novo coronavirus?
+    - onde surgiu o coronavirus?
+    - como surgiu o covid?
+    - coronavirus veio da China?
+    - os chineses trouxeram covid para o brasil?
+  
+- intent: perguntar_novo_coronavirus_igual_sars
+  examples: |
+    - o novo coronavirus é o mesmo que os vírus sars ou mers?
+    - coronavírus é a mesma coisa que sars?
+    - covid e sars são iguais?
+    - novo coronavirus e sars são vírus da mesma família?
+    - corona e mers são equivalentes?
+
+- intent: perguntar_diferenca_trasmissao
+  examples: |
+    - qual a diferença entre transmissão local e comunitária?
+    - tem diferença entre transmissão local e transmissão sustentada?
+    - só existe um tipo de trasmissão?
+    - o que é transmissão sustentada?
+    - como pode ser transmitido o vírus?
+
+- intent: perguntar_primeiros_sintomas
+  examples: |
+    - quais os primeiros sintomas da covid-19?
+    - quais os sintomas do coronavirus?
+    - os sintomas da covid é igual gripe?
+    - como saber os sintomas do coronavirus?
+   
