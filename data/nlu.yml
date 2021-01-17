@@ -103,28 +103,28 @@ nlu:
     - me fale mais sobre você
 
 # FAQ GERAL
-- intent: faq/sobre_covid
+- intent: faq/1_sobre_covid
   examples: |
     - o que é covid?
     - o que significa covid?
     - fale sobre covid-19
     - me fale mais sobre o covid-19
 
-- intent: faq/sobre_coronavirus
+- intent: faq/2_sobre_coronavirus
   examples: |
     - o que é coronavirus?
     - o que significa coronavírus?
     - fale sobre coronavirus
     - me fale mais sobre o coronavirus
 
-- intent: faq/sobre_sars
+- intent: faq/3_sobre_sars
   examples: |
     - o que é sars?
     - o que significa sars-cov-2?
     - fale sobre sars-cov-2
     - me fale mais sobre o sars-cov-2
 
-- intent: faq/diferenca_covid_coronavirus
+- intent: faq/4_diferenca_covid_coronavirus
   examples: |
     - tem diferença entre covid e coronavirus?
     - covid e coronavírus são a mesma coisa?
@@ -132,7 +132,7 @@ nlu:
     - qual a diferença de sars-cov-2 e covid?
     - quando devo usar o termo sars? 
 
-- intent: faq/como_surgiu_novo_coronavirus
+- intent: faq/5_como_surgiu_novo_coronavirus
   examples: |
     - de onde veio o novo coronavirus?
     - onde surgiu o coronavirus?
@@ -140,7 +140,7 @@ nlu:
     - coronavirus veio da China?
     - os chineses trouxeram covid para o brasil?
   
-- intent: faq/novo_coronavirus_igual_sars
+- intent: faq/6_novo_coronavirus_igual_sars
   examples: |
     - o novo coronavirus é o mesmo que os vírus sars ou mers?
     - coronavírus é a mesma coisa que sars?
@@ -148,7 +148,7 @@ nlu:
     - novo coronavirus e sars são vírus da mesma família?
     - corona e mers são equivalentes?
 
-- intent: faq/diferenca_trasmissao
+- intent: faq/7_diferenca_trasmissao
   examples: |
     - qual a diferença entre transmissão local e comunitária?
     - tem diferença entre transmissão local e transmissão sustentada?
@@ -156,10 +156,217 @@ nlu:
     - o que é transmissão sustentada?
     - como pode ser transmitido o vírus?
 
-- intent: faq/primeiros_sintomas
+- intent: faq/8_primeiros_sintomas
   examples: |
     - quais os primeiros sintomas da covid-19?
     - quais os sintomas do coronavirus?
     - os sintomas da covid é igual gripe?
     - como saber os sintomas do coronavirus?
    
+- intent: faq/9_diferenca_gripe_coronavirus
+  examples: |
+    - como vou saber se estou com gripe ou coronavirus?
+    - como diferenciar os sintomas de uma gripe comum?
+    - os sintomas da gripe e do covid sao iguais?
+    - como diferenciar gripe comum do coronavirus?
+
+- intent: faq/10_criterios_para_teste
+  examples: |
+    - Quais são os critérios para aplicação do teste?
+    - Pessoas com sintomas leves estão sendo testadas?
+    - apenas pessoas com sintomas graves estão sendo testadas?
+    - quais os requisitos para aplicação do teste?
+
+- intent: faq/11_posso_fazer_teste_fiocruz
+  examples: |
+    - Eu posso fazer o teste na Fiocruz?
+    - como posso fazer o teste de diagnóstico na Friocruz?
+    - posso fazer o teste do covid-19?
+    - como posso fazer o teste de coronavirus?
+
+- intent: faq/12_covid_apresenta_outros_sintomas
+  examples: |
+    - A COVID-19 pode apresentar outros sintomas?
+    - quais outros sintomas tem o coronavirus?
+    - tem sintomas além da gripe o covid?
+    - tem mais sintomas que o coronavirus pode apresentar?
+
+- intent: faq/13_sintomas_leves_transmite_covid
+  examples: |
+    - pessoas com sintomas leves podem transmitir a covid-19?
+    - estou com sintomas leves, eu posso transmitir a doença?
+    - O virus é transmitido por quem está com sintomas leves?
+    - Mesmo com sintomas leves é possível a trasmissão do coronavirus para outras pessoas?
+
+- intent: faq/14_sem_sintomas_trasmite_covid
+  examples: |
+    - A pessoa pode transmitir o coronavírus mesmo sem apresentar sintomas?
+    - Pessoa assintomática pode transimitir covid?
+    - não tenho sintomas, posso ainda sim transmitir o covid?
+    - é possível transmitir o corovírus mesmo sem sintomas?
+    - é possível transmitir o corovírus assintomática?
+
+- intent: faq/15_quando_procurar_atendimento
+  examples: |
+    - Quando a pessoa deve procurar atendimento de saúde?
+    - quando devo procurar atendimento?
+    - quando procurar atendimento de saúde?
+    - qual é o momento que a pessoa tem que procurar atendimento?
+    - quando sei que é hora de procurar ajuda?
+
+- intent: faq/16_devo_me_preocupar
+  examples: |
+    - Devo me preocupar com o coronavírus?
+    - as pessoas devem se preocupar com o covid-19?
+    - quais preocupações traz o Coronavírus para a sociedade?
+    - Coronavírus é motivo de preocupação?
+
+- intent: faq/17_coronavirus_provoca_sintomas_graves
+  examples: |
+    - A infecção pelo coronavírus pode provocar sintomas graves?
+    - o COVID-19 pode gerar sintomas graves?
+    - tenho covid, posso ter sintomas graves?
+    - qualquer pessoa pode ter sintomas graves por conta do coronavírus?
+
+- intent: faq/18_pessoas_maior_risco_evoluir_doencas_graves
+  examples: |
+    - Quais são as pessoas com maior risco para evoluir com formas graves da doença?
+    - quem tem o maior risco de evoluir a doença?
+    - pessoas de risco tem mais chance de evoluir formas grave da doença?
+    - quem são as pessoas de maior risco de ter a doença agravada?
+
+- intent: faq/19_quem_sao_grupo_de_risco
+  examples: |
+    - Quais são as pessoas que compõem os grupos de risco ou vulneráveis?
+    - quem são as pessoas do grupo de risco?
+    - Quais pessoas fazem parte do grupo de risco?
+    - quem é considerado do grupo de risco ou vulnerável?
+    - quais pessoas são vulneráveis ao covid?
+    - como sei se faço parte do grupo de risco?
+
+- intent: faq/20_pessoas_podem_ser_infectadas_novamente
+  examples: |
+    - As pessoas que se recuperam da COVID-19 podem ser infectadas novamente?
+    - Quem já pegou covid pode pegar de novo?
+    - pode haver reinfecção do coronavírus?
+    - se eu já tive covid, posso pegar novamente?
+    - Já tive covid, posso ser infectada de novo?
+
+- intent: faq/21_risco_mulheres_gravidas
+  examples: |
+    - Qual é o risco para mulheres grávidas de contrair a covid-19?
+    - Qual o risco do coronavírus em mulheres gestantes?
+    - Mulheres grávidas são grupo de risco?
+    - mulheres grávidas tem mais chance de pegar covid?
+    - é perigoso gestante contrair covid?
+    - o quão perigoso é pegar covid para as mulheres grávidas?
+    - estou grávida, tenho risco de pegar covid?
+
+- intent: faq/22_covid_causa_problemas_na_gravidez
+  examples: |
+    - A COVID-19 pode causar problemas durante a gravidez?
+    - quais problemas o covid traz durante a gravidez?
+    - o que o coronavirus pode causar para a mulher na gestação?
+    - COVID afeta a saúde no bebê na gravidez?
+
+- intent: faq/23_lactante_pode_amamentar
+  examples: |
+    - Uma mulher lactante que tenha sido infectada pelo coronavírus pode continuar amamentando?
+    - Mãe lactante pode continuar amamentando?
+    - uma mãe que teve covid ainda pode amamentar o bebê?
+    - mulher lactante pode continuar amamentando se estiver com coronavirus?
+    - se a mulher ta com covid, ela pode amamentar?
+- intent: faq/24_etiqueta_respiratoria
+  examples: |
+    - O que é etiqueta respiratória?
+    - quais cuidados devo ter ao espirrar ou tossir?
+    - como ter cuidado ao espirrar próximo de outras pessoas?
+    - devo usar lenço quando tossir?
+
+- intent: faq/25_como_prevenir
+  examples: |
+    - Como prevenir a transmissão do coronavírus?
+    - como posso reduzir o risco de contrair covid?
+    - o que posso fazer para prevenir a contração e transmissão do vírus?
+    - o pode pode ser feito de forma preventiva ao covid?
+
+- intent: faq/26_como_nao_passar_doenca
+  examples: |
+    - Se estiver doente, o que fazer para não passar a doença?
+    - como não trasmitir covid?
+    - o que devo fazer para não passar coronavírus para ninguem?
+    - estou com coronavirus, o que faço para não trasmitir a doença?
+
+- intent: faq/27_evitar_propagacao_no_trabalho
+  examples: |
+    - O que posso fazer para evitar a propagação da COVID-19 no meu local de trabalho?
+    - como evitar trasmissão de coronavirus no meu trabalho?
+    - estou trabalhando, quais cuidados tomar para evitar a propagação do COVID?
+    - quais dicas você me dá para evitar trasmissão de covid no meu trabalho?
+    - o que posso fazer no meu trabalho para evitar a trasmissão do covid?
+
+- intent: faq/28_caso_de_viagens_essenciais
+  examples: |
+    - O que fazer em casos de viagens essenciais?
+    - o que eu faço em caso de uma viagem inadiável?
+    - preciso viajar urgente, o que eu faço?
+    - quais dicar para quem precisa viajar?
+
+- intent: faq/30_quando_retornar_de_viagem
+  examples: |
+    - O que devo fazer ao retornar de viagem?
+    - o que eu faço quando voltar de viagem?
+    - Eu tive que viajar, quais recomendações devo tomar?
+    - Retornei de viagem, devo fazer isolamento?
+
+- intent: faq/31_como_coronavirus_e_transmitido
+  examples: |
+    - Como o coronavírus é transmitido?
+    - como acontece a trasmissão do covid?
+    - coronavírus é trasmissível?
+    - como eu posso pegar covid?
+
+- intent: faq/32_tratamento_covid
+  examples: |
+    - Qual o tratamento para pessoas com COVID-19?
+    - existe tratamento para o covid?
+    - coronavírus tem tratamento?
+    - tem algum tipo de tratamento para quem tem covid?
+    - estou com covid, possui tratamento?
+
+- intent: faq/33_controlar_sintomas
+  examples: |
+    - O que se pode fazer para controlar os sintomas do covid?
+    - como posso controlar os sintomas?
+    - Posso fazer algo para controlar os sintomas?
+    - eu posso fazer algo para amenizar os sintomas?
+## banho quente auxilia no controle?...
+
+- intent: faq/34_vacina_influenza_protege_contra_coronavirus
+  examples: |
+    - A vacina para influenza pode proteger também contra o novo coronavírus?
+    - tomando a vacina da gripe estou protegido do covid?
+    - a vacina da influenza serve para o novo coronavírus?
+    - a vacina de gripe protege do covid?
+
+- intent: faq/35_periodo_incubacao
+  examples: |
+    - O que é período de incubação?
+    - o que significa período de incubação?
+    - qual o significado do período de incubação?
+    - o que quer dizer período de incubação?
+  
+- intent: faq/36_qual_periodo_incubacao
+  examples: |
+    - Qual o período de incubação?
+    - qual é o período de incubação?
+    - quanto tempo duta o período de incubação?
+    - quantos dias duram o período de incubação?
+
+- intent: faq/37_quem_deve_usar_mascaras_cirurgicas
+  examples: |
+    - Quem deve usar máscaras cirúrgicas?
+    - todo mundo pode usar máscara cirúrgica?
+    - eu preciso usar máscara cirúrgica? 
+    - estou com covid, preciso usar máscara?
+    
