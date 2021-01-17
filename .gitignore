@@ -6,6 +6,11 @@ events.db-shm
 events.db-wal
 rasa.db
 
+
+### Credentials ###
+credentials.yml
+
+
 ## Python ##
 actions/__pycache__
 
