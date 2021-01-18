@@ -1,63 +1,120 @@
 version: '2.0'
-# config:
-#   store_entities_as_slots: true
-# session_config:
-#   session_expiration_time: 60
-#   carry_over_slots_to_new_session: true
-# intents:
-# - cumprimentar:
-#     use_entities: true
-# - despedir:
-#     use_entities: true
-# - affirm:
-#     use_entities: true
-# - deny:
-#     use_entities: true
-# - mood_agradecer:
-#     use_entities: true
-# - mood_unhappy:
-#     use_entities: true
-# - ajuda:
-#     use_entities: true
-# - sobre_bot:
-#     use_entities: true
-# - perguntar_sobre_covid:
-#     use_entities: true
-# - perguntar_sobre_coronavirus:
-#     use_entities: true
-# - perguntar_sobre_sars:
-#     use_entities: true
-# - perguntar_diferenca_covid_coronavirus:
-#     use_entities: true
-# - perguntar_como_surgiu_novo_coronavirus:
-#     use_entities: true
-# - perguntar_novo_coronavirus_igual_sars:
-#     use_entities: true
-# - perguntar_diferenca_trasmissao:
-#     use_entities: true
-# - perguntar_primeiros_sintomas:
-#     use_entities: true
-# entities: []
-# slots: {}
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
 intents:
-- cumprimentar
-- despedir
-- affirm
-- deny
-- mood_agradecer
-- mood_unhappy
-- ajuda
-- sobre_bot
-- faq/1_sobre_covid
-- faq/2_sobre_coronavirus
-- faq/3_sobre_sars
-- faq/4_diferenca_covid_coronavirus
-- faq/5_como_surgiu_novo_coronavirus
-- faq/6_novo_coronavirus_igual_sars
-- faq/7_diferenca_trasmissao
-- faq/8_primeiros_sintomas
-- faq/9_diferenca_gripe_coronavirus
-
+- cumprimentar:
+    use_entities: true
+- despedir:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_agradecer:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- ajuda:
+    use_entities: true
+- sobre_bot:
+    use_entities: true
+- faq/1_sobre_covid:
+    use_entities: true
+- faq/2_sobre_coronavirus:
+    use_entities: true
+- faq/3_sobre_sars:
+    use_entities: true
+- faq/4_diferenca_covid_coronavirus:
+    use_entities: true
+- faq/5_como_surgiu_novo_coronavirus:
+    use_entities: true
+- faq/6_novo_coronavirus_igual_sars:
+    use_entities: true
+- faq/7_diferenca_trasmissao:
+    use_entities: true
+- faq/8_primeiros_sintomas:
+    use_entities: true
+- faq/9_diferenca_gripe_coronavirus:
+    use_entities: true
+- faq/10_criterios_para_teste:
+    use_entities: true
+- faq/11_posso_fazer_teste_fiocruz:
+    use_entities: true
+- faq/12_covid_apresenta_outros_sintomas:
+    use_entities: true
+- faq/13_sintomas_leves_transmite_covid:
+    use_entities: true
+- faq/14_sem_sintomas_trasmite_covid:
+    use_entities: true
+- faq/15_quando_procurar_atendimento:
+    use_entities: true
+- faq/16_devo_me_preocupar:
+    use_entities: true
+- faq/17_coronavirus_provoca_sintomas_graves:
+    use_entities: true
+- faq/18_pessoas_maior_risco_evoluir_doencas_graves:
+    use_entities: true
+- faq/19_quem_sao_grupo_de_risco:
+    use_entities: true
+- faq/20_pessoas_podem_ser_infectadas_novamente:
+    use_entities: true
+- faq/21_risco_mulheres_gravidas:
+    use_entities: true
+- faq/22_covid_causa_problemas_na_gravidez:
+    use_entities: true
+- faq/23_lactante_pode_amamentar:
+    use_entities: true
+- faq/24_etiqueta_respiratoria:
+    use_entities: true
+- faq/25_como_prevenir:
+    use_entities: true
+- faq/26_como_nao_passar_doenca:
+    use_entities: true
+- faq/27_evitar_propagacao_no_trabalho:
+    use_entities: true
+- faq/28_caso_de_viagens_essenciais:
+    use_entities: true
+- faq/30_quando_retornar_de_viagem:
+    use_entities: true
+- faq/31_como_coronavirus_e_transmitido:
+    use_entities: true
+- faq/32_tratamento_covid:
+    use_entities: true
+- faq/33_controlar_sintomas:
+    use_entities: true
+- faq/34_vacina_influenza_protege_contra_coronavirus:
+    use_entities: true
+- faq/35_periodo_incubacao:
+    use_entities: true
+- faq/36_qual_periodo_incubacao:
+    use_entities: true
+- faq/37_quem_deve_usar_mascaras_cirurgicas:
+    use_entities: true
+- faq/38_como_usar_mascaras:
+    use_entities: true
+- faq/39_quando_substituir_a_mascara:
+    use_entities: true
+- faq/40_como_remover_a_mascara:
+    use_entities: true
+- faq/41_como_descartar_a_mascara:
+    use_entities: true
+- faq/42_usar_luvas_descartaveis_em_locais_publicos:
+    use_entities: true
+- faq/43_existe_vacina_contra_covid:
+    use_entities: true
+- faq/44_antibioticos_sao_eficazes:
+    use_entities: true
+- faq/45_medicamentos_para_prevenção:
+    use_entities: true
+- faq/46_cloroquina_contra_covid:
+    use_entities: true
+- faq:
+    use_entities: true
+entities: []
+slots: {}
 responses:
   utter_cumprimentar:
   - text: Olá, te ajudo com dúvidas sobre o COVID. Como posso te ajudar?
@@ -92,163 +149,111 @@ responses:
       Transmissão local: São casos de pessoas que se infectaram e não estiveram em nenhum país com registro da doença, mas tiveram contato com outro paciente infectado, que trouxe o vírus de fora do país.
        Transmissão comunitária ou sustentada: São casos nos quais não é possível identificar as fontes de transmissão da doença. Esse tipo de transmissão sugere circulação ativa do vírus na comunidade.
   utter_faq/8_primeiros_sintomas:
-  - text: "Os sintomas da COVID-19 são bastante parecidos com os da gripe: febre, tosse e dificuldade para respirar."
+  - text: 'Os sintomas da COVID-19 são bastante parecidos com os da gripe: febre, tosse e dificuldade para respirar.'
   utter_faq/9_diferenca_gripe_coronavirus:
-  - text: "Como os sintomas da COVID-19 são bastante parecidos com os da gripe, a única forma de saber se \
-  a infecção é causada pelo coronavírus é por exame laboratorial. Veja abaixo o quadro comparativo dos sintomas:"
-    image: "https://mooc.campusvirtual.fiocruz.br/rea/coronavirus/img/faq/tabela1.png"
+  - image: https://mooc.campusvirtual.fiocruz.br/rea/coronavirus/img/faq/tabela1.png
+    text: 'Como os sintomas da COVID-19 são bastante parecidos com os da gripe, a única forma de saber se a infecção é causada pelo coronavírus é por exame laboratorial. Veja abaixo o quadro comparativo dos sintomas:'
   utter_faq/10_criterios_para_teste:
-  - text: "Pessoas com dificuldade respiratória tem prioridade porque não há kits suficientes para todos \
-  que procuram os serviços de saúde. A pessoa que não tiver sintoma grave deve ficar em casa e circular o menos possível."
+  - text: Pessoas com dificuldade respiratória tem prioridade porque não há kits suficientes para todos que procuram os serviços de saúde. A pessoa que não tiver sintoma grave deve ficar em casa e circular o menos possível.
   utter_faq/11_posso_fazer_teste_fiocruz:
-  - text: "O laboratório de referência da Fiocruz realiza testes em materiais que são coletados nas unidades de \
-  saúde e enviados para a Fundação Oswaldo Cruz, pelos laboratórios centrais de saúde pública. A Fiocruz não \
-  realiza a coleta diretamente com os cidadãos."
+  - text: O laboratório de referência da Fiocruz realiza testes em materiais que são coletados nas unidades de saúde e enviados para a Fundação Oswaldo Cruz, pelos laboratórios centrais de saúde pública. A Fiocruz não realiza a coleta diretamente com os cidadãos.
   utter_faq/13_sintomas_leves_transmite_covid:
-  - text: "Sim. Foi relatada infecção assintomática com SARS-CoV-2, mas ainda não se sabe qual o papel da infecção \
-  assintomática na transmissão da doença. Da mesma forma, o papel da transmissão pré-sintomática (detecção de infecção \
-  durante o período de incubação antes do início da doença) é desconhecido."
+  - text: Sim. Foi relatada infecção assintomática com SARS-CoV-2, mas ainda não se sabe qual o papel da infecção assintomática na transmissão da doença. Da mesma forma, o papel da transmissão pré-sintomática (detecção de infecção durante o período de incubação antes do início da doença) é desconhecido.
   utter_faq/14_sem_sintomas_trasmite_covid:
-  - text: "Sim. O período de incubação do vírus pode variar de dois a 14 dias. Durante esse tempo, o vírus tem \
-  capacidade de transmissão. Por isso, é importante adotar medidas gerais de prevenção, como lavar as mãos \
-  com frequência e não compartilhar objetos de uso pessoal."
+  - text: Sim. O período de incubação do vírus pode variar de dois a 14 dias. Durante esse tempo, o vírus tem capacidade de transmissão. Por isso, é importante adotar medidas gerais de prevenção, como lavar as mãos com frequência e não compartilhar objetos de uso pessoal.
   utter_faq/15_quando_procurar_atendimento:
-  - text: "A pessoa deve procurar uma unidade de saúde se apresentar sintomas mais intensos, como dificuldade \
-  para respirar, febre muito alta (a partir de 39°C) e mal-estar excessivo."
+  - text: A pessoa deve procurar uma unidade de saúde se apresentar sintomas mais intensos, como dificuldade para respirar, febre muito alta (a partir de 39°C) e mal-estar excessivo.
   utter_faq/16_devo_me_preocupar:
-  - text: "As pessoas devem se preocupar com o impacto do surto de COVID-19. Apesar de a doença ser geralmente \
-  leve, especialmente para crianças e adultos jovens, ela pode se agravar, necessitando de cuidados hospitalares. \
-  A atenção deve ser direcionada à proteção individual e comunitária, por meio de medidas de higiene e etiqueta \
-  respiratória. É importante manter-se informado e seguir as orientações das autoridades locais de saúde, incluindo \
-  quaisquer restrições impostas a viagens, movimentação e reuniões."
+  - text: As pessoas devem se preocupar com o impacto do surto de COVID-19. Apesar de a doença ser geralmente leve, especialmente para crianças e adultos jovens, ela pode se agravar, necessitando de cuidados hospitalares. A atenção deve ser direcionada à proteção individual e comunitária, por meio de medidas de higiene e etiqueta respiratória. É importante manter-se informado e seguir as orientações das autoridades locais de saúde, incluindo quaisquer restrições impostas a viagens, movimentação e reuniões.
   utter_faq/17_coronavirus_provoca_sintomas_graves:
-  - text: "Sim. Sintomas graves como febre alta, dificuldade respiratória e hipóxia podem aparecer rapidamente, \
-  principalmente em grupos vulneráveis como: idosos, pessoas com deficiência, pessoas com doenças crônicas ou imunodeprimidas."
+  - text: 'Sim. Sintomas graves como febre alta, dificuldade respiratória e hipóxia podem aparecer rapidamente, principalmente em grupos vulneráveis como: idosos, pessoas com deficiência, pessoas com doenças crônicas ou imunodeprimidas.'
   utter_faq/18_pessoas_maior_risco_evoluir_doencas_graves:
-  - text: "Segundo a Organização Mundial da Saúde (OMS), adultos com mais de 60 anos e pessoas com doenças preexistentes \
-  têm maiores riscos de ter a doença agravada. Algumas das doenças preexistentes de alerta são: hipertensão arterial, \
-  diabetes, doença cardíaca, doença pulmonar, neoplasias, transplantados, uso de imunossupressores."
+  - text: 'Segundo a Organização Mundial da Saúde (OMS), adultos com mais de 60 anos e pessoas com doenças preexistentes têm maiores riscos de ter a doença agravada. Algumas das doenças preexistentes de alerta são: hipertensão arterial, diabetes, doença cardíaca, doença pulmonar, neoplasias, transplantados, uso de imunossupressores.'
   utter_faq/19_quem_sao_grupo_de_risco:
-  - text: "No caso da COVID-19, são os idosos, pessoas com deficiência e pessoas com doenças associadas, \
-  como cardíacos, diabéticos e pessoas com outros problemas respiratórios como a asma e a bronquite. \
-  Essas pessoas podem desenvolver o quadro mais grave da doença e, por isso, têm mais chance de morrer \
-  devido à infecção e devem ter prioridade no atendimento e na testagem para o vírus."
+  - text: No caso da COVID-19, são os idosos, pessoas com deficiência e pessoas com doenças associadas, como cardíacos, diabéticos e pessoas com outros problemas respiratórios como a asma e a bronquite. Essas pessoas podem desenvolver o quadro mais grave da doença e, por isso, têm mais chance de morrer devido à infecção e devem ter prioridade no atendimento e na testagem para o vírus.
   utter_faq/20_pessoas_podem_ser_infectadas_novamente:
-  - text: "A resposta imune ao COVID-19 ainda não está esclarecida. É pouquíssimo provável que os \
-  pacientes com infecção por coronavírus sejam reinfectados logo após a recuperação, apesar de não \
-  se saber se uma proteção imunológica semelhante será observada em pacientes com COVID-19."
+  - text: A resposta imune ao COVID-19 ainda não está esclarecida. É pouquíssimo provável que os pacientes com infecção por coronavírus sejam reinfectados logo após a recuperação, apesar de não se saber se uma proteção imunológica semelhante será observada em pacientes com COVID-19.
   utter_faq/21_risco_mulheres_gravidas:
-  - text: "Atualmente, não se sabe se as mulheres grávidas têm maior chance de adoecer com o \
-  COVID-19 do que o público em geral, nem se são mais propensas a terem doenças graves como resultado. \
-  As mulheres grávidas sofrem alterações em seus corpos que podem aumentar o risco de algumas infecções. \
-  É sempre importante que se protejam de doenças."
+  - text: Atualmente, não se sabe se as mulheres grávidas têm maior chance de adoecer com o COVID-19 do que o público em geral, nem se são mais propensas a terem doenças graves como resultado. As mulheres grávidas sofrem alterações em seus corpos que podem aumentar o risco de algumas infecções. É sempre importante que se protejam de doenças.
   utter_faq/22_covid_causa_problemas_na_gravidez:
-  - text: "Atualmente, não se sabe se o coronavírus causa problemas durante a gravidez ou se afeta a saúde do bebê após o nascimento."
+  - text: Atualmente, não se sabe se o coronavírus causa problemas durante a gravidez ou se afeta a saúde do bebê após o nascimento.
   utter_faq/23_lactante_pode_amamentar:
-  - text: "A Organização Mundial da Saúde (OMS) orienta a manutenção da amamentação. Até o momento, \
-  não há elementos que comprovem que o leite materno possa disseminar o novo coronavírus. A lactante \
-  com COVID-19 deve estar atenta à higiene respiratória, lavar as mãos antes e após tocar o seu bebê \
-  e limpar e desinfetar as superfícies rotineiramente."
+  - text: A Organização Mundial da Saúde (OMS) orienta a manutenção da amamentação. Até o momento, não há elementos que comprovem que o leite materno possa disseminar o novo coronavírus. A lactante com COVID-19 deve estar atenta à higiene respiratória, lavar as mãos antes e após tocar o seu bebê e limpar e desinfetar as superfícies rotineiramente.
   utter_faq/24_etiqueta_respiratoria:
-  - text: "É ter cuidado ao tossir e espirrar. Use um lenço de papel sempre que for tossir ou espirrar \
-  e, em seguida, descarte-o. Na ausência do lenço, espirre sobre o antebraço, em vez de usar as mãos \
-  para proteger o rosto."
+  - text: É ter cuidado ao tossir e espirrar. Use um lenço de papel sempre que for tossir ou espirrar e, em seguida, descarte-o. Na ausência do lenço, espirre sobre o antebraço, em vez de usar as mãos para proteger o rosto.
   utter_faq/25_como_prevenir:
-  - text: "Para reduzir o risco geral de contrair ou transmitir infecções respiratórias agudas, \
-  incluindo o coronavírus, algumas das medidas propostas por diferentes autoridades sanitárias são:\n \
-  - Lavar as mãos frequentemente com água e sabonete por pelo menos 20 segundos, respeitando os cinco \
-  momentos de higienização. Se não houver água e sabonete, usar um desinfetante para as mãos à base \
-  de álcool 70%.\n - Evitar tocar nos olhos, nariz e boca com as mãos não lavadas.\n \
-  - Evitar contato próximo com pessoas doentes e manter-se a uma distância de pelo menos \
-  um metro das demais pessoas.\n - Cobrir com o cotovelo ou com um lenço de papel a boca e \
-  nariz ao tossir ou espirrar. No caso do papel, jogar no lixo.\n - Limpar e desinfetar \
-  objetos e superfícies tocados com frequência. "
+  - text: |-
+      Para reduzir o risco geral de contrair ou transmitir infecções respiratórias agudas, incluindo o coronavírus, algumas das medidas propostas por diferentes autoridades sanitárias são:
+       - Lavar as mãos frequentemente com água e sabonete por pelo menos 20 segundos, respeitando os cinco momentos de higienização. Se não houver água e sabonete, usar um desinfetante para as mãos à base de álcool 70%.
+       - Evitar tocar nos olhos, nariz e boca com as mãos não lavadas.
+       - Evitar contato próximo com pessoas doentes e manter-se a uma distância de pelo menos um metro das demais pessoas.
+       - Cobrir com o cotovelo ou com um lenço de papel a boca e nariz ao tossir ou espirrar. No caso do papel, jogar no lixo.
+       - Limpar e desinfetar objetos e superfícies tocados com frequência. 
   utter_faq/26_como_nao_passar_doenca:
-  - text: "Você deve ficar em casa se estiver doente. No caso da pandemia atual, a maioria dos \
-  países afetados adotaram estratégias de isolamento e/ou quarentena, entre eles o Brasil. \
-  As regras para a população, os serviços e o comércio variam em cada cidade ou país e é \
-  crucial que todos sigam as recomendações das autoridades locais."
+  - text: Você deve ficar em casa se estiver doente. No caso da pandemia atual, a maioria dos países afetados adotaram estratégias de isolamento e/ou quarentena, entre eles o Brasil. As regras para a população, os serviços e o comércio variam em cada cidade ou país e é crucial que todos sigam as recomendações das autoridades locais.
   utter_faq/27_evitar_propagacao_no_trabalho:
-  - text: "- Lavar as mãos frequentemente com água e sabonete por pelo menos 20 segundos, \
-  respeitando os cinco momentos de higienização. Se não houver água e sabonete, usar um \
-  desinfetante para as mãos à base de álcool 70%.\n - Evitar tocar nos olhos, nariz e boca com as mãos não lavadas.\n \
-  - Evitar contato próximo com pessoas doentes e manter-se a uma distância \
-  de pelo menos um metro das demais pessoas.\n - Cobrir com o cotovelo ou com um lenço \
-  de papel a boca e nariz ao tossir ou espirrar. No caso do papel, jogar no lixo.\n \
-  - Limpar e desinfetar objetos e superfícies tocados com frequência.\n \
-  - Mantenha os ambientes bem ventilados"
+  - text: |-
+      - Lavar as mãos frequentemente com água e sabonete por pelo menos 20 segundos, respeitando os cinco momentos de higienização. Se não houver água e sabonete, usar um desinfetante para as mãos à base de álcool 70%.
+       - Evitar tocar nos olhos, nariz e boca com as mãos não lavadas.
+       - Evitar contato próximo com pessoas doentes e manter-se a uma distância de pelo menos um metro das demais pessoas.
+       - Cobrir com o cotovelo ou com um lenço de papel a boca e nariz ao tossir ou espirrar. No caso do papel, jogar no lixo.
+       - Limpar e desinfetar objetos e superfícies tocados com frequência.
+       - Mantenha os ambientes bem ventilados
   utter_faq/28_caso_de_viagens_essenciais:
-  - text: "Apesar de não haver nenhuma restrição para viagens nacionais \
-  (domésticas), a orientação é que todos que tenham possibilidade de ficar em casa, \
-  que fiquem. Caso não seja possível, higienize suas mãos frequentemente com água e \
-  sabão ou álcool 70% ou e evite tocar o rosto. Mantenha-se a pelo menos um metro \
-  de distância das demais pessoas. Adote medidas de etiqueta respiratória e não viaje \
-  de forma alguma caso faça parte do grupo de risco ou apresente sintomas de tosse e febre."
+  - text: Apesar de não haver nenhuma restrição para viagens nacionais (domésticas), a orientação é que todos que tenham possibilidade de ficar em casa, que fiquem. Caso não seja possível, higienize suas mãos frequentemente com água e sabão ou álcool 70% ou e evite tocar o rosto. Mantenha-se a pelo menos um metro de distância das demais pessoas. Adote medidas de etiqueta respiratória e não viaje de forma alguma caso faça parte do grupo de risco ou apresente sintomas de tosse e febre.
   utter_faq/30_quando_retornar_de_viagem:
-  - text: "Ao retornar de uma área com propagação de COVID-19, deve-se monitorar os \
-  sintomas por 14 dias. Em caso de sintomas leves, deve ser feito o isolamento. \
-  Em caso de sintomas graves, procurar uma unidade de saúde.\n\
-  Caso ainda tenha dúvidas sobre os sintomas pode me perguntar! Segue um quadro comparativo de sintomas:"
-  - image: "https://www.unasus.gov.br/uploads/especial/covid19/imagem/comparativo.jpg"
+  - image: https://www.unasus.gov.br/uploads/especial/covid19/imagem/comparativo.jpg
+    text: |-
+      Ao retornar de uma área com propagação de COVID-19, deve-se monitorar os sintomas por 14 dias. Em caso de sintomas leves, deve ser feito o isolamento. Em caso de sintomas graves, procurar uma unidade de saúde.
+      Caso ainda tenha dúvidas sobre os sintomas pode me perguntar! Segue um quadro comparativo de sintomas:
   utter_faq/31_como_coronavirus_e_transmitido:
-  - text: "O coronavírus é transmitido a partir de um indivíduo que tem o vírus, \
-  em contato próximo (cerca de 1m) com outras pessoas. Ocorre através do contato \
-  físico (aperto de mão, abraço etc), pequenas gotículas de saliva, espirro, \
-  tosse e através de objetos ou superfícies contaminadas, como celulares, mesas, \
-  maçanetas, brinquedos, teclados de computador etc."
+  - text: O coronavírus é transmitido a partir de um indivíduo que tem o vírus, em contato próximo (cerca de 1m) com outras pessoas. Ocorre através do contato físico (aperto de mão, abraço etc), pequenas gotículas de saliva, espirro, tosse e através de objetos ou superfícies contaminadas, como celulares, mesas, maçanetas, brinquedos, teclados de computador etc.
   utter_faq/32_tratamento_covid:
-  - text: "Ainda não há um tratamento específico para a doença. As pessoas infectadas \
-  devem permanecer em isolamento e receber cuidados de saúde para evitar o agravamento \
-  do quadro e aliviar os sintomas, reduzindo o desconforto. Pessoas com sintomas \
-  graves devem ser hospitalizadas. Diversos estudos estão em fase inicial para a \
-  formulação de protocolos de tratamento. A maioria dos pacientes se recupera graças \
-  aos cuidados de suporte."
+  - text: Ainda não há um tratamento específico para a doença. As pessoas infectadas devem permanecer em isolamento e receber cuidados de saúde para evitar o agravamento do quadro e aliviar os sintomas, reduzindo o desconforto. Pessoas com sintomas graves devem ser hospitalizadas. Diversos estudos estão em fase inicial para a formulação de protocolos de tratamento. A maioria dos pacientes se recupera graças aos cuidados de suporte.
   utter_faq/33_controlar_sintomas:
-  - text: "Beber bastante água auxilia no controle da febre. Banhos quentes e \
-  umidificadores de ar podem ser utilizados no quarto para ajudar a diminuir a \
-  dor de garganta e a tosse. O serviço de saúde deve ser procurado sempre \
-  que os sintomas se agravarem."
+  - text: Beber bastante água auxilia no controle da febre. Banhos quentes e umidificadores de ar podem ser utilizados no quarto para ajudar a diminuir a dor de garganta e a tosse. O serviço de saúde deve ser procurado sempre que os sintomas se agravarem.
   utter_faq/34_vacina_influenza_protege_contra_coronavirus:
-  - text: "Não. São vírus diferentes. A vacinação para influenza auxilia \
-  no combate da pandemia evitando a coinfecção pelos dois vírus ao mesmo 
-  \tempo e reduzindo a pressão sobre o sistema de saúde. Por isso, é \
-  importante manter o calendário de vacinação atualizado e seguir as \
-  recomendações das autoridades sanitárias em relação à vacinação."
+  - text: Não. São vírus diferentes. A vacinação para influenza auxilia no combate da pandemia evitando a coinfecção pelos dois vírus ao mesmo tempo e reduzindo a pressão sobre o sistema de saúde. Por isso, é importante manter o calendário de vacinação atualizado e seguir as recomendações das autoridades sanitárias em relação à vacinação.
   utter_faq/35_periodo_incubacao:
-  - text: "Período de incubação é o tempo que leva para aparecerem \
-  os primeiros sintomas, depois da infecção por coronavírus."
+  - text: Período de incubação é o tempo que leva para aparecerem os primeiros sintomas, depois da infecção por coronavírus.
   utter_faq/36_qual_periodo_incubacao:
-  - text: "O período de incubação pode variar de um a 14 dias, \
-  mais frequentemente ao redor de cinco dias. \n Essas estimativas \
-  estão sendo atualizados à medida que mais dados se tornam disponíveis."
+  - text: |-
+      O período de incubação pode variar de um a 14 dias, mais frequentemente ao redor de cinco dias. 
+       Essas estimativas estão sendo atualizados à medida que mais dados se tornam disponíveis.
   utter_faq/37_quem_deve_usar_mascaras_cirurgicas:
-  - text: "A OPAS e a OMS recomendam que as máscaras cirúrgicas sejam usadas por: \n \
-  - pessoas com sintomas respiratórios, como tosse ou dificuldade de respirar, \
-  inclusive ao procurar atendimento médico;\n  - profissionais de saúde e pessoas \
-  que prestam atendimento a indivíduos com sintomas respiratórios;\n - profissionais \
-  de saúde, ao entrar em uma sala com pacientes ou tratar um indivíduo com \
-  sintomas respiratórios.\n No entanto, o Ministério da Saúde está preparando \
-  um novo protocolo com indicação de uso de máscaras também para pessoas que não apresentam sintomas."
-  utter:
-  - text: "1. Antes de tocar na máscara, limpe as mãos com um higienizador à base de \
-  álcool ou água e sabão.\n 2. Pegue a máscara e verifique se está rasgada ou com buracos\n \
-  3. Oriente qual lado é o lado superio máscara está voltado para fora (o lado colorido).\n \
-  4. Coloque a máscara no seu rosto com cuidado para cobrir a boca e o nariz e amarre \
-  com segurança para minimizar as lacunas entre o rosto e a máscara; Aperte a tira de \
-  metal ou a borda rígida da máscara para que ela se adapte ao formato do seu nariz.\n \
-  5. Puxe a parte inferior da máscara para que ela cubra sua boca e seu queixo. \
-  Enquanto estiver utilizando a máscara, evite tocá-la;\n \
-  Etapas para colocãção da máscara no rosto: a) Segurar o respirador com a pinça nasal \
-  próxima à ponta dos dedos deixando as alças pendentes; b) Encaixar o respirador sob o queixo; \
-  c) Posicionar um tirante na nuca e o outro sobre a cabeça; d) Ajustar a pinça nasal no nariz; \
-  e) Verificar a vedação pelo teste de pressão positiva"
-  - image: "https://mooc.campusvirtual.fiocruz.br/rea/coronavirus/img/faq/passo-a-passo-mascara.png"
-  utter_:
-
-
-
-
-
+  - text: |-
+      A OPAS e a OMS recomendam que as máscaras cirúrgicas sejam usadas por: 
+       - pessoas com sintomas respiratórios, como tosse ou dificuldade de respirar, inclusive ao procurar atendimento médico;
+        - profissionais de saúde e pessoas que prestam atendimento a indivíduos com sintomas respiratórios;
+       - profissionais de saúde, ao entrar em uma sala com pacientes ou tratar um indivíduo com sintomas respiratórios.
+       No entanto, o Ministério da Saúde está preparando um novo protocolo com indicação de uso de máscaras também para pessoas que não apresentam sintomas.
+  utter_faq/38_como_usar_mascaras:
+  - image: https://mooc.campusvirtual.fiocruz.br/rea/coronavirus/img/faq/passo-a-passo-mascara.png
+    text: |-
+      1. Antes de tocar na máscara, limpe as mãos com um higienizador à base de álcool ou água e sabão.
+       2. Pegue a máscara e verifique se está rasgada ou com buracos
+       3. Oriente qual lado é o lado superio máscara está voltado para fora (o lado colorido).
+       4. Coloque a máscara no seu rosto com cuidado para cobrir a boca e o nariz e amarre com segurança para minimizar as lacunas entre o rosto e a máscara; Aperte a tira de metal ou a borda rígida da máscara para que ela se adapte ao formato do seu nariz.
+       5. Puxe a parte inferior da máscara para que ela cubra sua boca e seu queixo. Enquanto estiver utilizando a máscara, evite tocá-la;
+       Etapas para colocãção da máscara no rosto: a) Segurar o respirador com a pinça nasal próxima à ponta dos dedos deixando as alças pendentes; b) Encaixar o respirador sob o queixo; c) Posicionar um tirante na nuca e o outro sobre a cabeça; d) Ajustar a pinça nasal no nariz; e) Verificar a vedação pelo teste de pressão positiva
+  utter_faq/39_quando_substituir_a_mascara:
+  - text: Substitua a máscara usada por uma nova máscara limpa e seca assim que estiver úmida ou danificada.
+  utter_faq/40_como_remover_a_mascara:
+  - text: Após o uso, retire a máscara removendo as presilhas elásticas ou laços por trás das orelhas, mantendo a máscara afastada do rosto e das roupas. O cuidado é sempre para evitar tocar nas superfícies potencialmente contaminadas da máscara (parte frontal).
+  utter_faq/41_como_descartar_a_mascara:
+  - text: |-
+      1. Descarte a máscara em uma lixeira fechada e apropriada imediatamente após o uso. 
+       2. Higienize as mãos depois de tocar ou descartar a máscara.
+  utter_faq/42_usar_luvas_descartaveis_em_locais_publicos:
+  - text: Não. Lavar as mãos com água e sabão e evitar o contato com o rosto oferece uma proteção mais efetiva do que o uso de luvas ao sair de casa para locais públicos. É possível se contaminar pelo coronavírus mesmo utilizando luvas descartáveis caso você toque em superfícies contaminadas e logo após nos olhos, nariz ou boca.
+  utter_faq/43_existe_vacina_contra_covid:
+  - text: Até o momento, não há vacina nem medicamento antiviral específico para prevenir ou tratar a COVID-19. Vários países e organizações estão coordenando esforços para desenvolver vacinas e medicamentos para a prevenção e o tratamento.
+  utter_faq/44_antibioticos_sao_eficazes:
+  - text: Não. Os antibióticos não funcionam contra vírus, eles funcionam apenas em infecções bacterianas. A COVID-19 é causada por um vírus. Portanto, os antibióticos não funcionam. Antibióticos devem ser usados apenas com indicação médica para tratar uma infecção bacteriana.
+  utter_faq/45_medicamentos_para_prevenção:
+  - text: Embora alguns medicamentos possam proporcionar conforto e aliviar os sintomas da COVID-19, não há evidências de que a medicina atual possa prevenir ou curar a doença. Não se recomenda a automedicação com nenhum medicamento, incluindo antibióticos, como forma de prevenção ou cura para a doença.
+  utter_faq/46_cloroquina_contra_covid:
+  - text: Ainda não há evidências de que a cloroquina ou a variante hidroxicloroquina tenha efeito contra a COVID-19, doença provocada pelo novo coronavírus. Não se deve adquirir esses medicamentos, pois são importantes para várias condições reumatológicas e dermatológicas que exigem tratamento contínuo, além de apresentarem potenciais efeitos colaterais.
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'

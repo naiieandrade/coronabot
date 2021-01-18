@@ -102,7 +102,7 @@ nlu:
     - quem te criou?
     - me fale mais sobre você
 
-# FAQ GERAL
+### FAQ GERAL ###
 - intent: faq/1_sobre_covid
   examples: |
     - o que é covid?
@@ -276,6 +276,7 @@ nlu:
     - uma mãe que teve covid ainda pode amamentar o bebê?
     - mulher lactante pode continuar amamentando se estiver com coronavirus?
     - se a mulher ta com covid, ela pode amamentar?
+    
 - intent: faq/24_etiqueta_respiratoria
   examples: |
     - O que é etiqueta respiratória?
@@ -369,4 +370,75 @@ nlu:
     - todo mundo pode usar máscara cirúrgica?
     - eu preciso usar máscara cirúrgica? 
     - estou com covid, preciso usar máscara?
-    
+
+- intent: faq/38_como_usar_mascaras
+  examples: |
+    - Como usar as máscaras cirúrgicas?
+    - como eu uso a máscara cirúrgica?
+    - qual é a forma correta de usar a máscara cirurgica?
+    - tem jeito certo de usar a mascara?
+
+- intent: faq/39_quando_substituir_a_mascara
+  examples: |
+    - Quando devo substituir a máscara cirúrgica por outra nova?
+    - é necessário substituir a máscara cirúrgica?
+    - quando trocar a máscara cirurgica por uma nova?
+    - eu preciso substituir a máscara cirurgica?
+
+- intent: faq/40_como_remover_a_mascara
+  examples: |
+    - Como remover a máscara cirúrgica?
+    - como faço para tirar a máscara?
+    - qual é o jeito correto de retirar a máscara cirúrgica?
+    - como eu removo a máscara?
+
+- intent: faq/41_como_descartar_a_mascara
+  examples: |
+    - como descartar a mascara?
+    - qual eh o descarte correto da máscara cirúrgica?
+    - Qual é o jeito correto de descartar a máscara?
+    - tem uma forma correta para o descarte da mascara?
+
+- intent: faq/42_usar_luvas_descartaveis_em_locais_publicos
+  examples: |
+    - é indicado usar luvas descartaveis em locais publicos para a prevenção do coronavírus?
+    - devo usar luvas em locais públicos?
+    - é correto usar luvas descartáveis em lugares públicos?
+    - devo usar luvas descartáveis em espaços públicos?
+
+- intent: faq/43_existe_vacina_contra_covid
+  examples: |
+    - Existe uma vacina ou medicamento contra COVID-19?
+    - já existe vacina para combater o coronavirus?
+    - tem algum medicamento contra o covid?
+    - temos medicamento para tratar covid?
+
+- intent: faq/44_antibioticos_sao_eficazes
+  examples: |
+    - Os antibióticos são eficazes na prevenção ou tratamento do COVID-19?
+    - os antibioticos ajudam a prevenir coronavirus?
+    - os antibioticos servem para o tratamento do covid?
+    - tem algum antibiotico que sirva na prevencao do coronavirus?
+
+- intent: faq/45_medicamentos_para_prevenção
+  examples: |
+    - Existem medicamentos para a prevenção de Covid 19?
+    - já tem algum medicamento para a prevenção do coronavirus?
+    - quais medicamentos ajudam na prevenção da covid?
+    - como eu sei que medicamento auxilia na prevenção da doença?
+
+- intent: faq/46_cloroquina_contra_covid
+  examples: |
+    - Posso utilizar a Cloroquina contra covid-19?
+    - Cloroquina eh util no combate ao coronavirus?
+    - é correto usar cloroquina para tratar covid?
+    - cloroquina funciona contra coronavirus?
+
+### FAQ POPULAÇÂO ###
+
+# - intent: faq/44_antibioticos_sao_eficazes
+#   examples: |
+#     - 
+#     - 
+#     - 
+#     - 
