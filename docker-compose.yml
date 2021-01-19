@@ -8,3 +8,15 @@ services:
       - ./:/app
     command:
       - run
+## substituir no localhost no credential para o mesmo nome? pq?
+  action-server:
+    image: rasa/rasa-sdk ##:1.10.2 nova: 2.2.0
+    volumes:
+      - ./actions:/app/actions
+    ports:
+      - 5055:5055
+
+ # bot_telegram:
+  #  ports: 500
+
+## https://hub.docker.com/r/wernight/ngrok/?
