@@ -1,13 +1,37 @@
 version: '3.0'
 services:
-  rasa:
+  rasa-train:
+    image: rasa/rasa:2.2.5-full
+    ports:
+      - 5004:5004
+    volumes:
+      - ./:/app
+    command:
+      - train 
+  rasa-run:
     image: rasa/rasa:2.2.5-full
     ports:
       - 5005:5005
     volumes:
       - ./:/app
     command:
-      - run
+      - run 
+      - --cors 
+      - "*"
+    tty: true
+    stdin_open: true
+    depends_on:
+      - rasa-train
+  web:
+    image: nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./web:/usr/share/nginx/html
+  # ngrok:
+  #   image: wernight/ngrok
+  #   ports: 
+  #     - "4040:4040"
 ## substituir no localhost no credential para o mesmo nome? pq?
   action-server:
     image: rasa/rasa-sdk ##:1.10.2 nova: 2.2.0
@@ -15,6 +39,16 @@ services:
       - ./actions:/app/actions
     ports:
       - 5055:5055
+    command:
+      - http 5005
+  # rasa_x:
+  #   image: rasa/rasa-x:0.35.0
+  #   volumes:
+  #     - ./:/app
+  #   ports:
+  #     - 5002:5002
+#  db:
+#    image: postgres
 
  # bot_telegram:
   #  ports: 500
