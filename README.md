@@ -1,6 +1,6 @@
 ## Conheça a Esther
 
-Esther é um chatbot desenvolvido com o RASA (versão 2) para responder perguntas frequentes sobre o coronavírus. Está em fase de construção, e para a primeira versão as perguntas foram baseadas do [FAQ da Fio Cruz](https://mooc.campusvirtual.fiocruz.br/rea/coronavirus/faq.html).
+Esther é um chatbot desenvolvido com o RASA (versão 2) para responder perguntas frequentes sobre o coronavírus. Está em fase de construção, e para a primeira versão as perguntas foram baseadas do [FAQ da Fiocruz](https://mooc.campusvirtual.fiocruz.br/rea/coronavirus/faq.html).
 
 
 __________________________
@@ -8,8 +8,14 @@ __________________________
 
 ### Como foi construído
 
-Esther é um chatbot desenvolvido com o RASA versão 2. 
+Esther é um chatbot desenvolvido com o RASA versão 2. Utiliza o modelo de [FAQ](https://rasa.com/docs/rasa/chitchat-faqs/) disponível nesta versão do rasa. Possui as seguintes intenções:
+- Saudação, cumprimento
+- Ajuda 
+- Sobre o bot e quem o fez
+- Despedida
+- Fallback
 
+No processo de desenvolvimento usuários testes testaram o bot e assim ajudaram a contribuir com sua evolução.
 
 ### Como rodar a Esther?
 
@@ -24,7 +30,6 @@ Antes de rodar a Esther é necessário se atentar aos programas que já devem es
 
 #### Como rodar
 
-- Além da instalação do ngrok, também é preciso [criar uma conta](https://ngrok.com/).
 - Vá até a pasta onde instalou o ngrok e execute o seguinte comando:
 
 ```bash
@@ -59,6 +64,8 @@ sudo docker-compose up
 [http://localhost:8080/](http://localhost:8080/)
 
 - Agora pode conversar com o bot no webchat ou telegram que ele já estará funcionando!
+
+Qualquer dúvida verifique a [documentação do rasa](https://rasa.com/docs/rasa/) que serviu de base de todo o projeto.
 
 
 ### Próximos passos

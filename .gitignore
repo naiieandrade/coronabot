@@ -11,7 +11,7 @@ rasa.db
 
 
 ### Credentials ###
-credentials.yml
+# credentials.yml
 
 
 ## Python ##

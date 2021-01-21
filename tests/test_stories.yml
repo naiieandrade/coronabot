@@ -2,90 +2,68 @@
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
 stories:
-- story: happy path 1
+- story: caminho feliz 1
   steps:
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
+      oi
+    intent: cumprimentar
+  - action: utter_cumprimentar
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      me ajuda?
+    intent: ajuda
+  - action: utter_ajuda
 
-- story: happy path 2
+- story: caminho feliz 2
   steps:
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
+      olá
+    intent: cumprimento
+  - action: utter_cumprimento
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      socorro
+    intent: ajuda
+  - action: utter_ajuda
   - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+      o que é covid?
+    intent: faq
+  - action: utter_faq
+  - user: |
+      obrigado
+    intent: mood_agradecer
+  - action: utter_responde_agradecimento
+  - user: |
+      tchau
+    intent: despedir
+    action: utter_despedir
 
-- story: sad path 1
+- story: caminho feliz 3
   steps:
   - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
+      me ajuda?
+    intent: ajuda
+  - action: utter_ajuda
 
-- story: sad path 2
+- story: caminho triste 1
   steps:
   - user: |
-      hello
-    intent: greet
-  - action: utter_greet
+      obrigada
+    intent: mood_agradecer
+  - action: utter_ajudei
   - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      not really
-    intent: deny
-  - action: utter_goodbye
+      sim
+    intent: afirmar
+  - action: utter_ajudei negativo
 
-- story: sad path 3
+- story: despedir
   steps:
   - user: |
-      hi
-    intent: greet
-  - action: utter_greet
-  - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
+      até mais!
+    intent: despedir
+  - action: utter_despedir
 
-- story: say goodbye
+- story: sobre o bot
   steps:
   - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
-
-- story: bot challenge
-  steps:
-  - user: |
-      are you a bot?
-    intent: bot_challenge
-  - action: utter_iamabot
+      quem é você?
+    intent: sobre_bot
+  - action: utter_sobre_bot
