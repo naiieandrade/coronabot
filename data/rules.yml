@@ -2,22 +2,12 @@ version: "2.0"
 
 rules:
 
-- rule: Despedir sempre que o usuário despedir
-  steps:
-  - intent: despedir
-  - action: utter_despedir
-
 - rule: Falar sobre o bot quando o usuário perguntar sobre o bot 
   steps:
   - intent: sobre_bot
   - action: utter_sobre_bot
 
-- rule: Mostrar menu quando o usuário pedir ajuda
-  steps:
-  - intent: ajuda
-  - action: utter_ajuda
-
-- rule: respond to FAQs
+- rule: Responder as perguntas - FAQs
   steps:
   - intent: faq
   - action: utter_faq
@@ -27,12 +17,7 @@ rules:
   - intent: fora_de_escopo
   - action: utter_fora_de_escopo
 
-# - rule: respond to chitchat
-#   steps:
-#   - intent: chitchat
-#   - action: utter_chitchat
-
-# - rule: Quando o bot não entender
-#   steps:
-#   - intent: nlu_fallback
-#   - action: utter_nao_entendi
+- rule: Quando o bot não entender
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback

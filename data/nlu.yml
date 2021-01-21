@@ -36,7 +36,7 @@ nlu:
     - até mais ver
     - até mais
 
-- intent: affirm
+- intent: afirmar
   examples: |
     - sim
     - s
@@ -45,7 +45,7 @@ nlu:
     - ok
     - correto
 
-- intent: deny
+- intent: negar
   examples: |
     - não
     - n
@@ -67,23 +67,6 @@ nlu:
     - super claro
     - valeu!
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
 - intent: ajuda
   examples: |
     - pode me ajudar?
@@ -92,6 +75,7 @@ nlu:
     - preciso de apoio
     - poderia me auxiliar?
     - socorro
+    - me ajuda
 
 - intent: sobre_bot
   examples: |
@@ -101,6 +85,8 @@ nlu:
     - estou falando com quem?
     - quem te criou?
     - me fale mais sobre você
+    - vc eh um robo?
+    - qual o seu nome?
 
 - intent: fora_de_escopo
   examples: |
@@ -108,6 +94,37 @@ nlu:
     - Quem é o presidente do Brasil?
     - Que dia é hoje?
     - Você me acha legal?
+    - você tem medo do coronavírus?
+    - eu te amo
+    - como faz brigadeiro?
+    - me conta uma piada
+    - conta pra mim?
+    - insumos
+
+- intent: faq/easter_egg
+  examples: |
+    - Naiara
+    - quem é naiara
+    - naiara?
+
+### Intenções sobre covid ###
+
+- intent: faq/china_criou_coronavirus
+  examples: |
+    - A China criou o coronavírus?
+    - o coronavírus foi criado em laboratório?
+    - Os chineses criaram o covid e espalhou pelo mundo de propósito?
+    - a culpa é dos chineses pela criação do coronavírus?
+  
+- intent: faq/vacina_liberada_no_brasil
+  examples: |
+    - E a vacina?
+    - a vacina contra o covid ja foi liberada?
+    - Posso tomar a vacina do coronavirus?
+    - quem pode tomar a vacina?
+    - qualquer um pode tomar a vacina?
+    - quero tomar a vacina, eu posso?
+    - me fale mais sobre a vacina
 
 ### FAQ GERAL ###
 - intent: faq/1_sobre_covid
@@ -198,6 +215,8 @@ nlu:
     - quais outros sintomas tem o coronavirus?
     - tem sintomas além da gripe o covid?
     - tem mais sintomas que o coronavirus pode apresentar?
+    - quais sintomas do covid?
+    - qual sintoma?
 
 - intent: faq/13_sintomas_leves_transmite_covid
   examples: |
@@ -221,6 +240,7 @@ nlu:
     - quando procurar atendimento de saúde?
     - qual é o momento que a pessoa tem que procurar atendimento?
     - quando sei que é hora de procurar ajuda?
+    - estou com dores
 
 - intent: faq/16_devo_me_preocupar
   examples: |
@@ -298,6 +318,7 @@ nlu:
     - como posso reduzir o risco de contrair covid?
     - o que posso fazer para prevenir a contração e transmissão do vírus?
     - o pode pode ser feito de forma preventiva ao covid?
+    - como posso me proteger?
 
 - intent: faq/26_como_nao_passar_doenca
   examples: |
@@ -333,7 +354,7 @@ nlu:
     - Como o coronavírus é transmitido?
     - como acontece a trasmissão do covid?
     - coronavírus é trasmissível?
-    - como eu posso pegar covid?
+    - eu posso pegar covid?
 
 - intent: faq/32_tratamento_covid
   examples: |
@@ -349,7 +370,7 @@ nlu:
     - como posso controlar os sintomas?
     - Posso fazer algo para controlar os sintomas?
     - eu posso fazer algo para amenizar os sintomas?
-## banho quente auxilia no controle?...
+    - banho quente auxilia no controle dos sintomas?
 
 - intent: faq/34_vacina_influenza_protege_contra_coronavirus
   examples: |
@@ -577,10 +598,3 @@ nlu:
     - por que devemos usar o álcool 70?
     - porque usar o alcool gel 70% para higienizar as mãos?
     - o alcool em gel 70 para higienização é eficiente?
-
-# - intent: faq/1_pop_temperatura_que_o_virus_nao_resista
-#   examples: |
-#     - 
-#     - 
-#     - 
-#     - 

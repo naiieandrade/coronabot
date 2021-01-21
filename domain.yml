@@ -1,6 +1,6 @@
 version: '2.0'
 config:
-  store_entities_as_slots: true
+  store_entities_as_slots: false
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
@@ -9,145 +9,15 @@ intents:
     use_entities: true
 - despedir:
     use_entities: true
-- affirm:
+- afirmar:
     use_entities: true
-- deny:
+- negar:
     use_entities: true
 - mood_agradecer:
-    use_entities: true
-- mood_unhappy:
     use_entities: true
 - ajuda:
     use_entities: true
 - sobre_bot:
-    use_entities: true
-- faq/1_sobre_covid:
-    use_entities: true
-- faq/2_sobre_coronavirus:
-    use_entities: true
-- faq/3_sobre_sars:
-    use_entities: true
-- faq/4_diferenca_covid_coronavirus:
-    use_entities: true
-- faq/5_como_surgiu_novo_coronavirus:
-    use_entities: true
-- faq/6_novo_coronavirus_igual_sars:
-    use_entities: true
-- faq/7_diferenca_trasmissao:
-    use_entities: true
-- faq/8_primeiros_sintomas:
-    use_entities: true
-- faq/9_diferenca_gripe_coronavirus:
-    use_entities: true
-- faq/10_criterios_para_teste:
-    use_entities: true
-- faq/11_posso_fazer_teste_fiocruz:
-    use_entities: true
-- faq/12_covid_apresenta_outros_sintomas:
-    use_entities: true
-- faq/13_sintomas_leves_transmite_covid:
-    use_entities: true
-- faq/14_sem_sintomas_trasmite_covid:
-    use_entities: true
-- faq/15_quando_procurar_atendimento:
-    use_entities: true
-- faq/16_devo_me_preocupar:
-    use_entities: true
-- faq/17_coronavirus_provoca_sintomas_graves:
-    use_entities: true
-- faq/18_pessoas_maior_risco_evoluir_doencas_graves:
-    use_entities: true
-- faq/19_quem_sao_grupo_de_risco:
-    use_entities: true
-- faq/20_pessoas_podem_ser_infectadas_novamente:
-    use_entities: true
-- faq/21_risco_mulheres_gravidas:
-    use_entities: true
-- faq/22_covid_causa_problemas_na_gravidez:
-    use_entities: true
-- faq/23_lactante_pode_amamentar:
-    use_entities: true
-- faq/24_etiqueta_respiratoria:
-    use_entities: true
-- faq/25_como_prevenir:
-    use_entities: true
-- faq/26_como_nao_passar_doenca:
-    use_entities: true
-- faq/27_evitar_propagacao_no_trabalho:
-    use_entities: true
-- faq/28_caso_de_viagens_essenciais:
-    use_entities: true
-- faq/30_quando_retornar_de_viagem:
-    use_entities: true
-- faq/31_como_coronavirus_e_transmitido:
-    use_entities: true
-- faq/32_tratamento_covid:
-    use_entities: true
-- faq/33_controlar_sintomas:
-    use_entities: true
-- faq/34_vacina_influenza_protege_contra_coronavirus:
-    use_entities: true
-- faq/35_periodo_incubacao:
-    use_entities: true
-- faq/36_qual_periodo_incubacao:
-    use_entities: true
-- faq/37_quem_deve_usar_mascaras_cirurgicas:
-    use_entities: true
-- faq/38_como_usar_mascaras:
-    use_entities: true
-- faq/39_quando_substituir_a_mascara:
-    use_entities: true
-- faq/40_como_remover_a_mascara:
-    use_entities: true
-- faq/41_como_descartar_a_mascara:
-    use_entities: true
-- faq/42_usar_luvas_descartaveis_em_locais_publicos:
-    use_entities: true
-- faq/43_existe_vacina_contra_covid:
-    use_entities: true
-- faq/44_antibioticos_sao_eficazes:
-    use_entities: true
-- faq/45_medicamentos_para_prevenção:
-    use_entities: true
-- faq/46_cloroquina_contra_covid:
-    use_entities: true
-- faq/1_pop_temperatura_que_o_virus_nao_resista:
-    use_entities: true
-- faq/2_pop_fever_agua_mata_virus:
-    use_entities: true
-- faq/3_pop_agua_sabao_mata_virus:
-    use_entities: true
-- faq/4_pop_receita_gel_caseiro:
-    use_entities: true
-- faq/5_pop_animal_transmite_covid:
-    use_entities: true
-- faq/6_pop_eh_seguro_receber_pacote:
-    use_entities: true
-- faq/7_pop_quanto_tempo_sobrevive_superficies:
-    use_entities: true
-- faq/8_pop_cuidado_especial_com_roupas:
-    use_entities: true
-- faq/9_pop_adiar_reunioes_eventos:
-    use_entities: true
-- faq/10_pop_como_fazer_isolamento_domiciliar:
-    use_entities: true
-- faq/11_pop_caso_de_covid_itens_separados:
-    use_entities: true
-- faq/12_pop_caso_de_covid_condutas:
-    use_entities: true
-- faq/13_pop_caso_de_covid_condutas_outros_moradores:
-    use_entities: true
-- faq/14_pop_elevadores_por_familia:
-    use_entities: true
-- faq/15_pop_alho_ajuda_na_prevencao:
-    use_entities: true
-- faq/16_pop_vitaminas_propolis_previnem:
-    use_entities: true
-- faq/17_pop_cha_uisque_previnem:
-    use_entities: true
-- faq/18_pop_medicamento_que_nao_deve_ser_usado:
-    use_entities: true
-- faq/19_pop_porque_alcool_70:
     use_entities: true
 - faq:
     use_entities: true
@@ -157,24 +27,36 @@ entities: []
 slots: {}
 responses:
   utter_cumprimentar:
-  - text: Olá, te ajudo com dúvidas sobre o COVID. Como posso te ajudar?
+  - text: "Olá, eu sou a Esther. Estou aqui para te ajudar com dúvidas sobre o COVID. Como posso te ajudar?\n E caso precise de ajuda é só falar!"
   utter_despedir:
   - text: Tchau, espero que tenha ajudado! Até mais!
   utter_ajuda:
-  - text: 'Veja algumas coisas que pode perguntar: MENU'
+  - text: "Veja algumas coisas que pode perguntar: \"O que é coronavírus?\", \"Quais são os sintomas?\""
+  - text: "Veja algumas coisas que pode perguntar: \"A vacina foi liberada no Brasil?\", \"Como usar as máscaras cirúrgicas?\""
+  - text: "Veja algumas coisas que pode perguntar: \"Quando devo procurar atendimento?\", \"Por que devemos usar o álcool 70%?\""
   utter_ajudei:
   - text: Ajudei?
+  utter_ajudei_positivo:
+  - text: Que bom! Se ainda tiver mais alguma dúvida estou a disposição.
+  utter_ajudei_negativo:
+  - text: Desculpa, vou trabalhar mais então para conseguir te responder da próxima vez!
   utter_sobre_bot:
-  - text: Eu sou um bot criado pela maravilhosa Naiara!
+  - text: Me chamo Esther. Eu sou um bot criado pela maravilhosa Naiara! Se quiser mais informações sobre ela você encontra no https://github.com/naiieandrade
   utter_responde_agradecimento:
   - text: Por nada! Qualquer dúvida estou por aqui!
   utter_fallback:
-  - text: Desculpa, não entendi
+  - text: Desculpa, não entendi. Poderia escrever de outra forma sua pergunta?
   utter_fora_de_escopo:
   - text: Desculpa, ainda não tenho conhecimento sobre esse assunto.
   - text: Desculpa, ainda não aprendi sobre esse assunto.
-  
-  ### FAQ GERAL ###
+  utter_faq/easter_egg:
+  - text: "Ah, a Naiara! Ela é Engenheira de Software, super apaixonada por tecnologia e adora conversar! Se quiser mandar falar pelo Telegram: @naaiie"
+    channel: "telegram"
+  - text: "Ah, a Naiara! Ela é Engenheira de Software, super apaixonada por tecnologia e adora conversar!"
+  utter_faq/china_criou_coronavirus:
+  - text: Cuidado com as notícias e infomações que circulam pelas redes sociais. Muitas delas são Fake News! Não há qualquer comprovação de que o vírus foi criado pela China.
+  utter_faq/vacina_liberada_no_brasil:
+  - text: A Anvisa (Agência Nacional de Vigilância Sanitária) aprovou dia 17 de Janeiro de 2021 os pedidos de uso emergencial no Brasil. As vacinas serão destinadas inicialmente para imunização de pessoas de grupos de risco como indígenas, idosos e profissionais de saúde.
   utter_faq/1_sobre_covid:
   - text: É o nome dado à doença causada pelo coronavírus. Esse nome vem de "COrona", "VIrus" e "Disease" (doença), e 2019 representa o ano em que ela surgiu (o surto foi relatado à Organização Mundial da Saúde em 31 de dezembro).
   utter_faq/2_sobre_coronavirus:
@@ -343,13 +225,7 @@ responses:
   - text: Não há restrições específicas de uso de medicamentos de rotina e alívio de sintomas. A restrição ao uso de medicamentos à base de ibuprofeno no tratamento contra a COVID-19 inicialmente propagada não é suportada por evidências científicas conclusivas. São necessários mais estudos que forneçam dados mais robustos sobre o tema.
   utter_faq/19_pop_porque_alcool_70:
   - text: Porque nessa concentração o álcool tem ação antimicrobiana, agindo contra bactérias, fungos e vírus (incluindo o novo coronavírus). Concentrações diferentes desta não terão o mesmo efeito antimicrobiano. Além disso, álcool líquido ou concentrações maiores poderão evaporar rapidamente, diminuindo sua eficácia, além de ressecar a pele, levando à formação de fissuras e rachaduras, o que pode servir como porta de entrada a bactérias.
-  utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
-  utter_did_that_help:
-  - text: Did that help you?
-  utter_happy:
-  - text: Great, carry on!
+
 actions: []
 forms: {}
 e2e_actions: []
