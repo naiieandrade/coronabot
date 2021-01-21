@@ -67,3 +67,5 @@ sudo docker-compose up
 - Fazer deploy da Esther para poder compartilhar o bot de forma web com usuários testes e usuários em geral para poder captar mais dados de interação com o bot. 
 - Analisar os dados das conversas salvos para novos insights, melhoria do bot atual e até criação de novas intents que os usuários demonstrem interesse.
 - Criação da personalidade da Esther.
+- Utilização de slots, como de nome por exemplo, para criar uma conversa mais personalizada.
+- Criação de menus com botões que facilitem a interação do usuário com a Esther.
