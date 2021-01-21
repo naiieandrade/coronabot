@@ -102,6 +102,13 @@ nlu:
     - quem te criou?
     - me fale mais sobre você
 
+- intent: fora_de_escopo
+  examples: |
+    - o que tem para comer?
+    - Quem é o presidente do Brasil?
+    - Que dia é hoje?
+    - Você me acha legal?
+
 ### FAQ GERAL ###
 - intent: faq/1_sobre_covid
   examples: |
@@ -162,6 +169,7 @@ nlu:
     - quais os sintomas do coronavirus?
     - os sintomas da covid é igual gripe?
     - como saber os sintomas do coronavirus?
+    - Quais são os sintomas do covid?
    
 - intent: faq/9_diferenca_gripe_coronavirus
   examples: |
@@ -436,7 +444,141 @@ nlu:
 
 ### FAQ POPULAÇÂO ###
 
-# - intent: faq/44_antibioticos_sao_eficazes
+- intent: faq/1_pop_temperatura_que_o_virus_nao_resista
+  examples: |
+    - Tem alguma temperatura que o virus nao resista?
+    - o vírus não resiste alguma temperatura?
+    - altas temperaturas evita transmissão da doença?
+    - no calor, com altas temperaturas, tem risco de trasmissao do covid?
+
+- intent: faq/2_pop_fever_agua_mata_virus
+  examples: |
+    - ferver agua mata o vírus?
+    - consigo elimitar o virus fervendo agua?
+    - com agua quente eu mato o vírus do coronaviruS?
+    - agua quente é util no combate ao coronavirus?
+
+- intent: faq/3_pop_agua_sabao_mata_virus
+  examples: |
+    - lavar a mão com água e sabao é suficiente para eliminar o virus?
+    - agua e sabao mata o vírus do covid?
+    - se eu lavar as mãos com água e sabão elimino o vírus?
+    - lavar com agua e sabao é eficiente?
+
+- intent: faq/4_pop_receita_gel_caseiro
+  examples: |
+    - Existe uma receita de gel para fazer em casa?
+    - posso fazer gel caseiro?
+    - tem receita para eu fazer gel caseiro?
+    - É confiavel fezer gel caseiro?
+
+- intent: faq/5_pop_animal_transmite_covid
+  examples: |
+    - Posso pegar o Covid-19 do meu animal de estimação?
+    - cachorro pode transmitir coronavirus?
+    - posso pegar covid do meu gato?
+    - animais de estimação podem passar coronavirus?
+
+- intent: faq/6_pop_eh_seguro_receber_pacote
+  examples: |
+    - É seguro receber um pacote de qualquer área em que o COVid-19 ja tenha sido relatado?
+    - posso receber pacote de uma pessoa contaminada com coronavirus?
+    - é seguro eu abrir uma entrega que veio de uma área com altos índices de covid?
+    - posso receber entregas que vieram de lugares que tenham covid?
+
+- intent: faq/7_pop_quanto_tempo_sobrevive_superficies
+  examples: |
+    - Quanto tempo o vírus sobrevive em superfícies?
+    - o vírus fica quanto tempo nas supercífies?
+    - o coronavírus pode ficar ate quanto tempo nos objetos?
+    - qual tempo de vida do vírus nas superficies?
+
+- intent: faq/8_pop_cuidado_especial_com_roupas
+  examples: |
+    - Existe algum cuidado especial com as roupas?
+    - como cuidar das roupas contaminadas?
+    - o que fazer com roupas possivelmente contaminadas?
+    - como dlimpar as roupas?
+
+- intent: faq/9_pop_adiar_reunioes_eventos
+  examples: |
+    - Devemos adiar reuniões ou eventos?
+    - é melhor adiar festa de aniversário?
+    - Tenho um casamento para ir, é seguro ir?
+    - seria melhor adiar os cultos religiosos?
+
+- intent: faq/10_pop_como_fazer_isolamento_domiciliar
+  examples: |
+    - estou com coronavírus, como devo fazer o isolamento?
+    - qual o jeito certo de fazer isolamento em casa?
+    - tem um caso de covid na minha casa, como seguir com o isolamento domiciliar?
+#    - 
+
+- intent: faq/11_pop_caso_de_covid_itens_separados
+  examples: |
+    - há um caso de coronavírus confirmado na minha casa. Quais os itens precisam ser separados?
+    - quais itens para separar de alguem que está com covid?
+    - estou com covid, quais itens tenho que separar?
+    - que objetos precisam ser separados de quem está com a doença?
+
+- intent: faq/12_pop_caso_de_covid_condutas
+  examples: |
+    - Há um caso de coronavírus confirmado na minha casa. Quais condutas para uma pessoa com COVID-19?
+    - quais condutas se ter com alguém que está com coronavírus?
+    - o que fazer se alguem da minha casa tiver com covid?
+    - quais condutas devo seguir para me prevenir com alguem que esteja com o coronavirus?
+
+- intent: faq/13_pop_caso_de_covid_condutas_outros_moradores
+  examples: |
+    - Há um caso de coronavírus confirmado na minha casa. Quais as condutas para todos os outros moradores?
+    - Se alguém na minha casa estiver com covid, quais condutas os outros moradores devem ter?
+    - O que os vizinhos devem fazer se alguém estiver com coronavírus na minha casa?
+    - devo avisar aos meus vizinhos caso alguém tenha covid aqui em casa?
+
+- intent: faq/14_pop_elevadores_por_familia
+  examples: |
+    - os elevadores devem ser usados ao mesmo tempo para mais de uma pessoa ou família?
+    - É indicado mais uma pessoa da mesma família usar o elevador na mesma hora?
+    - eu posso dividir o elevador com minha família?
+    - Eu posso dividir o elevador com outras pessoas?
+    - É possível utilizar o elevador com outras pessoas?
+
+- intent: faq/15_pop_alho_ajuda_na_prevencao
+  examples: |
+    - Consumir alho ajuda na prevenção do coronavírus?
+    - comer alho previni o covid?
+    - se eu comer alho estou projegida do coronavirus?
+    - é verdade que comer alho ajuda na prevenção da doença?
+
+- intent: faq/16_pop_vitaminas_propolis_previnem
+  examples: |
+    - Tomar vitamina C e própolis akida a prevenir contra o vírus?
+    - tomando vitamina D ou própolis estou prevenida contra o covid?
+    - alguma das vitaminas C ou D ajudam no combate ao coronavírus?
+    - o uso de propolis previne o covid?
+
+- intent: faq/17_pop_cha_uisque_previnem
+  examples: |
+    - Chá de abacate com hortelã, mel, uísque e outras substâncias previnem a infecção pelo coronavírus?
+    - existe algum alimento que previne o vírus?
+    - tem alguma substância específica que ajuda na prevenção do covid?
+    - tem medicamento que previne a infecção?
+
+- intent: faq/18_pop_medicamento_que_nao_deve_ser_usado
+  examples: |
+    - Existe algum medicamento que não deva ser usado em casos suspeitos ou confirmados de COVID-19?
+    - se a pessoa tiver covid, existe alguma restrição de medicamento?
+    - Tem algum medicamento que alguém com coronavírus não pode tomar?
+    - tem restrição de medicamento para casos suspeito do vírus?
+
+- intent: faq/19_pop_porque_alcool_70
+  examples: |
+    - Por que se indica o álcool gel na concentração de 70% para higienização das mãos?
+    - por que devemos usar o álcool 70?
+    - porque usar o alcool gel 70% para higienizar as mãos?
+    - o alcool em gel 70 para higienização é eficiente?
+
+# - intent: faq/1_pop_temperatura_que_o_virus_nao_resista
 #   examples: |
 #     - 
 #     - 

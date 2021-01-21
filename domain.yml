@@ -111,7 +111,47 @@ intents:
     use_entities: true
 - faq/46_cloroquina_contra_covid:
     use_entities: true
+- faq/1_pop_temperatura_que_o_virus_nao_resista:
+    use_entities: true
+- faq/2_pop_fever_agua_mata_virus:
+    use_entities: true
+- faq/3_pop_agua_sabao_mata_virus:
+    use_entities: true
+- faq/4_pop_receita_gel_caseiro:
+    use_entities: true
+- faq/5_pop_animal_transmite_covid:
+    use_entities: true
+- faq/6_pop_eh_seguro_receber_pacote:
+    use_entities: true
+- faq/7_pop_quanto_tempo_sobrevive_superficies:
+    use_entities: true
+- faq/8_pop_cuidado_especial_com_roupas:
+    use_entities: true
+- faq/9_pop_adiar_reunioes_eventos:
+    use_entities: true
+- faq/10_pop_como_fazer_isolamento_domiciliar:
+    use_entities: true
+- faq/11_pop_caso_de_covid_itens_separados:
+    use_entities: true
+- faq/12_pop_caso_de_covid_condutas:
+    use_entities: true
+- faq/13_pop_caso_de_covid_condutas_outros_moradores:
+    use_entities: true
+- faq/14_pop_elevadores_por_familia:
+    use_entities: true
+- faq/15_pop_alho_ajuda_na_prevencao:
+    use_entities: true
+- faq/16_pop_vitaminas_propolis_previnem:
+    use_entities: true
+- faq/17_pop_cha_uisque_previnem:
+    use_entities: true
+- faq/18_pop_medicamento_que_nao_deve_ser_usado:
+    use_entities: true
+- faq/19_pop_porque_alcool_70:
+    use_entities: true
 - faq:
+    use_entities: true
+- fora_de_escopo:
     use_entities: true
 entities: []
 slots: {}
@@ -130,6 +170,11 @@ responses:
   - text: Por nada! Qualquer dúvida estou por aqui!
   utter_fallback:
   - text: Desculpa, não entendi
+  utter_fora_de_escopo:
+  - text: Desculpa, ainda não tenho conhecimento sobre esse assunto.
+  - text: Desculpa, ainda não aprendi sobre esse assunto.
+  
+  ### FAQ GERAL ###
   utter_faq/1_sobre_covid:
   - text: É o nome dado à doença causada pelo coronavírus. Esse nome vem de "COrona", "VIrus" e "Disease" (doença), e 2019 representa o ano em que ela surgiu (o surto foi relatado à Organização Mundial da Saúde em 31 de dezembro).
   utter_faq/2_sobre_coronavirus:
@@ -232,7 +277,7 @@ responses:
     text: |-
       1. Antes de tocar na máscara, limpe as mãos com um higienizador à base de álcool ou água e sabão.
        2. Pegue a máscara e verifique se está rasgada ou com buracos
-       3. Oriente qual lado é o lado superio máscara está voltado para fora (o lado colorido).
+       3. Oriente qual lado é o lado superior máscara que está voltado para fora (o lado colorido).
        4. Coloque a máscara no seu rosto com cuidado para cobrir a boca e o nariz e amarre com segurança para minimizar as lacunas entre o rosto e a máscara; Aperte a tira de metal ou a borda rígida da máscara para que ela se adapte ao formato do seu nariz.
        5. Puxe a parte inferior da máscara para que ela cubra sua boca e seu queixo. Enquanto estiver utilizando a máscara, evite tocá-la;
        Etapas para colocãção da máscara no rosto: a) Segurar o respirador com a pinça nasal próxima à ponta dos dedos deixando as alças pendentes; b) Encaixar o respirador sob o queixo; c) Posicionar um tirante na nuca e o outro sobre a cabeça; d) Ajustar a pinça nasal no nariz; e) Verificar a vedação pelo teste de pressão positiva
@@ -254,6 +299,50 @@ responses:
   - text: Embora alguns medicamentos possam proporcionar conforto e aliviar os sintomas da COVID-19, não há evidências de que a medicina atual possa prevenir ou curar a doença. Não se recomenda a automedicação com nenhum medicamento, incluindo antibióticos, como forma de prevenção ou cura para a doença.
   utter_faq/46_cloroquina_contra_covid:
   - text: Ainda não há evidências de que a cloroquina ou a variante hidroxicloroquina tenha efeito contra a COVID-19, doença provocada pelo novo coronavírus. Não se deve adquirir esses medicamentos, pois são importantes para várias condições reumatológicas e dermatológicas que exigem tratamento contínuo, além de apresentarem potenciais efeitos colaterais.
+  utter_faq/1_pop_temperatura_que_o_virus_nao_resista:
+  - text: O vírus é muito novo e os estudos são muito novos. Como todo vírus respiratório, a tendência dele é se espalhar mais em ambientes secos e com temperaturas mais baixas. Temperaturas mais elevadas diminuem a atividade do vírus, mas isso não quer dizer que não haja risco de transmissão.
+  utter_faq/2_pop_fever_agua_mata_virus:
+  - text: De forma geral, vírus e bactérias são inativados por temperaturas acima de 70º C. Por isso, é seguro admitir que ferver água elimine o vírus. Entretanto, o uso de água quente como bebida ou para lavar roupas não garante a eliminação do vírus. Para limpar roupas e superfícies utilize água e sabão, álcool a 70% ou água sanitária.
+  utter_faq/3_pop_agua_sabao_mata_virus:
+  - text: Sim, lavar as mãos, o corpo, roupas e superfícies com água e sabão é eficaz para remover o vírus.
+  utter_faq/4_pop_receita_gel_caseiro:
+  - text: Não, a OPAS e a OMS não divulgaram receita de gel para fazer em casa. Esse processo de produção caseira pode, inclusive, ser prejudicial à saúde. A recomendação da OPAS e da OMS é lavar as mãos com água e sabão ou higienizador à base de álcool. Tanto álcool em gel quanto água e sabão são eficazes para matar vírus que podem estar nas mãos ou em outra parte do corpo.
+  utter_faq/5_pop_animal_transmite_covid:
+  - text: Até o momento, não há evidências de que qualquer animal de estimação possa transmitir coronavírus.
+  utter_faq/6_pop_eh_seguro_receber_pacote:
+  - text: Sim. A probabilidade de uma pessoa infectada contaminar mercadorias comerciais é baixa e o risco de pegar o vírus que causa o COVID-19 em um pacote que foi movido, transportado e exposto a diferentes condições e temperaturas também é baixo.
+  utter_faq/7_pop_quanto_tempo_sobrevive_superficies:
+  - text: 'Não se sabe ao certo quanto tempo o vírus que causa a COVID-19 sobrevive em superfícies, mas ele parece se comportar como outros coronavírus. Os coronavírus podem persistir nas superfícies por algumas horas ou até vários dias, o que pode variar conforme diferentes condições: por exemplo, tipo de superfície, temperatura ou umidade do ambiente.'
+  utter_faq/8_pop_cuidado_especial_com_roupas:
+  - text: |-
+      Fique atento para não sacudir roupas "potencialmente" contaminadas. 
+      É importante separar roupas pessoais e roupas de cama de pessoas infectadas para que seja feita a higienização à parte. Se não for possível fazer a lavagem destas roupas imediatamente, a recomendação é que elas sejam armazenadas em sacos de lixo plástico até que seja possível lavar. Higienizar as mãos com álcool gel 70% ou água e sabão, antes e depois de manipular os sacos plásticos. 
+      Para a higienização das roupas, recomenda-se a utilização de detergente próprio para lavar roupas.
+  utter_faq/9_pop_adiar_reunioes_eventos:
+  - text: Regiões ou países com transmissão comunitária do vírus devem considerar o adiamento de todos os eventos em que haja aglomeração humana.
+  utter_faq/10_pop_como_fazer_isolamento_domiciliar:
+  - text: |-
+      A distância mínima entre o paciente e os demais moradores é de 1 metro. 
+      No quarto usado para o isolamento, mantenha as janelas abertas para circulação do ar, a porta fechada durante todo o isolamento e limpe a maçaneta frequentemente com álcool 70% ou água sanitária. 
+      Atenção! Em casas com apenas um quarto, os demais moradores devem dormir na sala, longe do paciente infectado.
+  utter_faq/11_pop_caso_de_covid_itens_separados:
+  - text: O lixo produzido pelo paciente contaminado precisa ser separado e descartado. Toalhas de banho, garfos, facas, colheres, copos e outros objetos usados pelo paciente, assim como sofás e cadeiras também não podem ser compartilhados. Os móveis da casa precisam ser limpos frequentemente com água sanitária ou álcool 70%.
+  utter_faq/12_pop_caso_de_covid_condutas:
+  - text: Utilize máscara o tempo todo. Se for preciso cozinhar, use máscara de proteção, cobrindo boca e nariz todo o tempo. Depois de usar o banheiro, nunca deixe de lavar as mãos com água e sabão e sempre limpe vaso, pia e demais superfícies com álcool ou água sanitária para desinfecção do ambiente.
+  utter_faq/13_pop_caso_de_covid_condutas_outros_moradores:
+  - text: Se uma pessoa da casa tiver diagnóstico positivo, todos os moradores devem ficar em isolamento por 14 dias também. Caso outro familiar da casa também comece a apresentar sintomas leves, ele deve reiniciar o isolamento de 14 dias. Se os sintomas forem graves, como dificuldade para respirar, ele deve procurar orientação médica.
+  utter_faq/14_pop_elevadores_por_familia:
+  - text: Sim, caso todos estejam sem sintomas. Evitar elevadores lotados - tente preservar a distância mínima de um metro mesmo dentro do elevador e não toque desnecessariamente em superfícies. Ao sair do elevador, lave as mãos assim que possível.
+  utter_faq/15_pop_alho_ajuda_na_prevencao:
+  - text: Não. Houve muita divulgação recomendando a ingestão de alho para evitar infecções. A OMS afirma que, embora seja "um alimento saudável que possa ter algumas propriedades antimicrobianas", não há evidências de que comer alho ou qualquer outro alimento ou substância possa proteger as pessoas do novo coronavírus.
+  utter_faq/16_pop_vitaminas_propolis_previnem:
+  - text: Não há nenhuma evidência de que a utilização de vitamina C, própolis ou outra substância protejam contra o novo coronavírus. Portanto, uma alimentação saudável é muito mais recomendável.
+  utter_faq/17_pop_cha_uisque_previnem:
+  - text: Até o momento, não há nenhum medicamento, substância, vitamina, alimento específico ou vacina que possa prevenir a infecção pelo novo coronavírus.
+  utter_faq/18_pop_medicamento_que_nao_deve_ser_usado:
+  - text: Não há restrições específicas de uso de medicamentos de rotina e alívio de sintomas. A restrição ao uso de medicamentos à base de ibuprofeno no tratamento contra a COVID-19 inicialmente propagada não é suportada por evidências científicas conclusivas. São necessários mais estudos que forneçam dados mais robustos sobre o tema.
+  utter_faq/19_pop_porque_alcool_70:
+  - text: Porque nessa concentração o álcool tem ação antimicrobiana, agindo contra bactérias, fungos e vírus (incluindo o novo coronavírus). Concentrações diferentes desta não terão o mesmo efeito antimicrobiano. Além disso, álcool líquido ou concentrações maiores poderão evaporar rapidamente, diminuindo sua eficácia, além de ressecar a pele, levando à formação de fissuras e rachaduras, o que pode servir como porta de entrada a bactérias.
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
