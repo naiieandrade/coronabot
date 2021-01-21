@@ -42,11 +42,15 @@ Copie a url fornecida https e troque no arquivo `credentials.yml` nos locais inf
 sudo docker-compose up
 ```
 
+<<<<<<< HEAD
 - Para ter acesso ao webchat acesse:
 
 [http://localhost:8080/](http://localhost:8080/)
 
 - E converse com o bot no telegram que ele já estará funcionando!
+=======
+
+>>>>>>> origin/main
 
 
 
