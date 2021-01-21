@@ -1,68 +1,38 @@
-<html>
-    <!-- <header>
-        <tittle>Titulo</tittle>
-    </header>
-    <body>
-        hellou world!
+<html> 
+  <head>
+    <link rel="stylesheet" href="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4"><h2>Conheça a Esther, chatbot especializado no assunto COVID-19!</h2></div></div>
+      <div class="col-sm-4"></div>
+    </div>
+    </br></br>
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4"><div class="chat-container"></div></div>
+      <div class="col-sm-4"></div>
+    </div>
 
-        <div id="webchat"></div>
-            <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
-            // you can add a version tag if you need, e.g for version 0.11.5 https://cdn.jsdelivr.net/npm/rasa-webchat@0.11.5/lib/index.min.js
-            <script>
-            WebChat.default.init({
-                selector: "#webchat",
-                initPayload: "/get_started",
-                customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
-                socketUrl: "https://a7c799ee4e8d.ngrok.io:5500",
-                socketPath: "/socket.io/",
-                title: "Coronabot",
-                subtitle: "O melhor bot especializado em coronavírus",
-                params: {"storage": "session"} // can be set to "local"  or "session". details in storage section.
-            })
-            </script>
-
-    </body> -->
-    <head>
-  <link rel="stylesheet" href="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.css" />
-</head>
-<body>
-    OIOIOIOIOI
-  <div class="chat-container"></div>
-
-  <script src="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.js"/></script>
-  <script type="text/javascript">
-    var chatroom = new window.Chatroom({
-      host: "http://localhost:5005",
-      title: "Chat with Mike",
-      container: document.querySelector(".chat-container"),
-      welcomeMessage: "Hi, I am Mike. How may I help you?",
-    //   speechRecognition: "en-US",
-    //   voiceLang: "en-US"
-    });
-    chatroom.openChat();
-  </script>
-</body>
+    <!-- Utilizando o widget chatroom -->
+    <script src="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.js"/></script>
+    <script type="text/javascript">
+      var chatroom = new window.Chatroom({
+        host: "http://localhost:5005",
+        title: "Converse com Esther",
+        container: document.querySelector(".chat-container"),
+        welcomeMessage: "Olá, eu sou a Esther, o que você gostaria de saber sobre o coronavírus?",
+      //   speechRecognition: "en-US",
+      //   voiceLang: "en-US"
+      });
+      chatroom.openChat();
+    </script>
+  </body>
 </html>
-
-<!-- <html>
-    <head>
-        <link rel="stylesheet" href="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.css" />
-    </head>
-    <header>
-        <tittle>Titulo</tittle>
-    </header>
-    <div class="chat-container"></div>
-
-  <script src="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.js"/></script>
-  <script type="text/javascript">
-    var chatroom = new window.Chatroom({
-      host: "http://localhost:5005",
-      title: "Chat with Mike",
-      container: document.querySelector(".chat-container"),
-      welcomeMessage: "Hi, I am Mike. How may I help you?",
-      speechRecognition: "en-US",
-      voiceLang: "en-US"
-    });
-    chatroom.openChat();
-  </script>
-</html> -->
