@@ -50,13 +50,13 @@ Nessa imagem a url fornecia é `https://c8cc457cb043.ngrok.io`.
 
 #### Configurar webchat
 
-- Para que o bot funcione na web após executar o servidor, copie a url https fornecida e subtitua por "sua_url" no arquivo `credentials.yml` em `rest`.
+- Após executar o servidor, copie a url https fornecida e subtitua por "sua_url" no arquivo em `rest` no arquivo`credentials.yml`.
 
 **obs:** é necessário fazer este passo porque a conta free não permite edição de domínio, para que facilitasse seria necessário a conta paga para que a url fosse fixa.
 
 #### Configurar integração com o Telegram
 
-- Copie a url utlizada na configuração do webchat e subtitua por "sua_url" no arquivo `credentials.yml` em `telegram`.
+- Copie a url fornecida https e subtitua por "sua_url" em `telegram` no arquivo `credentials.yml` pela url https fornecida pelo ngrok.
 
 - Para que o telegram funcione corretamente, é preciso criar um bot pelo [Telegram](https://rasa.com/docs/rasa/connectors/telegram/) usando o [BotFather](https://t.me/botfather).
 - Adicione o nome do bot e o token fornecido pelo BotFather no arquivo `credentials.yml`
