@@ -50,7 +50,7 @@ Nessa imagem a url fornecia é `https://c8cc457cb043.ngrok.io`.
 
 #### Configurar webchat
 
-- Para que o bot funcione na web após executar o servidor, copie a url fornecida https e subtitua por "sua_url" no arquivo `credentials.yml` em `rest`.
+- Para que o bot funcione na web após executar o servidor, copie a url https fornecida e subtitua por "sua_url" no arquivo `credentials.yml` em `rest`.
 
 **obs:** é necessário fazer este passo porque a conta free não permite edição de domínio, para que facilitasse seria necessário a conta paga para que a url fosse fixa.
 
